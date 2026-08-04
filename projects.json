@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Custom Robotic Arm",
+    "featured": true,
+    "category": "Mechanical Design & Control",
+    "status": "2025-Present",
+    "description": "Multi-joint robotic arm focused on mechanical design, actuator selection, manipulation, inverse kinematics, joint control, motion planning, and future computer-vision-guided autonomy.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "CAD / Docs",
+    "image": "./assets/projects/custom-robotic-arm-cover.png",
+    "imageAlt": "Updated CAD model of Aakarsh Sangar's custom robotic arm",
+    "tags": ["CAD", "Stepper Motors", "Servo Motors", "Robotics", "Embedded Systems"]
+  },
+  {
+    "title": "Jetson Orin Nano Robotics Platform",
+    "featured": true,
+    "category": "Robotics & Computer Vision",
+    "status": "2026",
+    "description": "NVIDIA Jetson Orin Nano robotics computing platform for real-time perception, edge AI deployment, Linux development, Docker workflows, and hardware/software troubleshooting.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "Build Notes",
+    "image": "",
+    "imageAlt": "Jetson Orin Nano robotics platform setup",
+    "tags": ["Python", "OpenCV", "MediaPipe", "NVIDIA Jetson", "Linux", "Docker"]
+  },
+  {
+    "title": "Faultline",
+    "featured": true,
+    "category": "Multi-Agent AI Research Assistant",
+    "status": "CalHacks AI 2026",
+    "description": "Multi-agent research tool created at CalHacks AI Hackathon to analyze academic literature, identify conflicting claims between papers, summarize findings, compare methods, and propose validation experiments.",
+    "github": "https://github.com/aakarsh-s/Faultline-2/tree/main/Faultline%202",
+    "docs": "",
+    "docsLabel": "Demo / Notes",
+    "images": [
+      {
+        "src": "./assets/projects/faultline-saved-investigation.png",
+        "alt": "Faultline saved investigation homepage"
+      },
+      {
+        "src": "./assets/projects/faultline-agent-events.png",
+        "alt": "Faultline typed message exchange and agent event dashboard"
+      }
+    ],
+    "imageAlt": "Faultline AI research assistant interface",
+    "tags": ["Python", "LLM APIs", "AI Agents", "Information Retrieval"]
+  },
+  {
+    "title": "Vision-Based Health Monitoring System",
+    "featured": true,
+    "category": "rPPG & Computer Vision",
+    "status": "2026",
+    "description": "Computer vision approach for estimating physiological signals from camera input, exploring remote photoplethysmography and non-contact heart-rate monitoring.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "Research Notes",
+    "image": "",
+    "imageAlt": "Vision-based health monitoring project visualization",
+    "tags": ["Computer Vision", "Machine Learning", "Python", "rPPG"]
+  },
+  {
+    "title": "ModalAI Robotics Internship",
+    "featured": false,
+    "category": "Engineering Experience",
+    "status": "2025",
+    "description": "Supported autonomous drone hardware development, Stinger V2 prototype assembly and validation, mechanical integration, troubleshooting, and computer-vision-enabled navigation testing.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "Portfolio Notes",
+    "image": "",
+    "imageAlt": "Robotics hardware prototype or internship project image",
+    "tags": ["Robotics Hardware", "Embedded Systems", "Computer Vision", "Prototyping"]
+  },
+  {
+    "title": "FIRST / FTC Robotics",
+    "featured": false,
+    "category": "Competition Robotics",
+    "status": "Team Project",
+    "description": "Competition robot design, build, and testing through iterative mechanical and electrical development with mechanisms, motors, sensors, and integrated robot systems.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "Robot Gallery",
+    "image": "",
+    "imageAlt": "FIRST or FTC competition robot",
+    "tags": ["Mechanical Design", "Motors", "Sensors", "Robot Integration"]
+  },
+  {
+    "title": "CalHacks AI Hackathon",
+    "featured": false,
+    "category": "Hackathon",
+    "status": "UC Berkeley 2026",
+    "description": "Fast-paced AI prototype development using multi-agent architectures, collaborative engineering, and presentation of a functional research-assistant platform.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "Submission",
+    "image": "",
+    "imageAlt": "CalHacks AI hackathon demo or team project",
+    "tags": ["AI", "Agents", "Prototyping", "Presentation"]
+  },
+  {
+    "title": "TritonHacks",
+    "featured": false,
+    "category": "Hackathon",
+    "status": "UC San Diego 2025",
+    "description": "AI-based application prototype focused on solving real-world problems through external APIs and machine learning tools.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "Submission",
+    "image": "",
+    "imageAlt": "TritonHacks project demo or app screenshot",
+    "tags": ["AI", "APIs", "Machine Learning", "Prototype"]
+  },
+  {
+    "title": "Science Olympiad Coaching",
+    "featured": false,
+    "category": "Leadership",
+    "status": "Canyon Crest Academy",
+    "description": "Mentored younger students in engineering and science concepts, technical problem solving, and preparation for competitions.",
+    "github": "",
+    "docs": "",
+    "docsLabel": "Highlights",
+    "image": "",
+    "imageAlt": "Science Olympiad coaching or competition materials",
+    "tags": ["Mentorship", "Engineering", "Science Communication"]
+  }
+]
