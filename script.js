@@ -2,7 +2,9 @@ const projectGrid = document.querySelector("#project-grid");
 const featuredGrid = document.querySelector("#featured-grid");
 const year = document.querySelector("#year");
 
-year.textContent = new Date().getFullYear();
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
 function createProjectCard(project) {
   const article = document.createElement("article");
@@ -103,6 +105,10 @@ function createProjectCard(project) {
 }
 
 async function loadProjects() {
+  if (!projectGrid || !featuredGrid) {
+    return;
+  }
+
   try {
     const response = await fetch("./projects.json");
     if (!response.ok) {

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Custom robotic arm iteration gallery by Aakarsh Sangar."
+    />
+    <title>Robotic Arm Iterations | Aakarsh Sangar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="detail-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="./index.html" aria-label="Aakarsh Sangar home">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span>Aakarsh Sangar</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="./index.html#projects">Projects</a>
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="detail-hero" aria-labelledby="iterations-title">
+        <p class="detail-kicker">Custom Robotic Arm</p>
+        <h1 id="iterations-title">Arm Iterations</h1>
+        <p class="detail-copy">
+          A progression from early CAD architecture to a physical prototype,
+          with each revision improving stiffness, actuator packaging, mass
+          distribution, and serviceability.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="./index.html#projects">Back to Projects</a>
+        </div>
+      </section>
+
+      <section class="section iteration-grid" aria-label="Robotic arm iteration gallery">
+        <article class="iteration-card">
+          <img
+            src="./assets/projects/custom-robotic-arm-cad.png"
+            alt="Early CAD model of the robotic arm base and shoulder assembly"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Iteration 01 / Baseline Architecture</p>
+            <h2>Initial shoulder and base layout</h2>
+            <p>
+              This revision established the main revolute joints, base turntable,
+              belt-driven rotation concept, and high-level actuator placement.
+            </p>
+            <ul>
+              <li>Defined the base yaw axis and shoulder pitch geometry.</li>
+              <li>Explored pulley-driven torque transmission around the base.</li>
+              <li>Used broad structural plates to validate linkage spacing and joint clearances.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/projects/custom-robotic-arm-cover.png"
+            alt="Updated CAD model of the robotic arm with truss-style link geometry"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Iteration 02 / Structural Optimization</p>
+            <h2>Trussed link and actuator integration</h2>
+            <p>
+              The arm moved toward a lighter link structure with triangular
+              cutouts, improved actuator packaging, and a clearer load path from
+              the end effector back into the shoulder joint.
+            </p>
+            <ul>
+              <li>Reduced link mass with truss-style geometry while preserving bending stiffness.</li>
+              <li>Improved motor packaging around the elbow and shoulder axes.</li>
+              <li>Added more accessible fastener locations for assembly and maintenance.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/projects/custom-robotic-arm-prototype.png"
+            alt="Physical prototype of the custom robotic arm with wiring and actuators"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Iteration 03 / Physical Prototype</p>
+            <h2>Printed assembly and electronics integration</h2>
+            <p>
+              The current prototype brings the CAD system into hardware,
+              revealing real constraints around wiring, actuator mounting,
+              torsional compliance, and center-of-mass management.
+            </p>
+            <ul>
+              <li>Validated printed part tolerances and mechanical fit-up.</li>
+              <li>Integrated servos, wiring, and power distribution around the moving joints.</li>
+              <li>Identified next improvements for cable routing, bearing support, and joint backlash reduction.</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="technical-strip" aria-label="Technical improvement summary">
+          <div>
+            <strong>Load path</strong>
+            Improved transfer of bending and torsional loads through the shoulder,
+            elbow, and trussed link structure.
+          </div>
+          <div>
+            <strong>Actuation</strong>
+            More deliberate actuator placement for torque delivery, packaging,
+            and future closed-loop control.
+          </div>
+          <div>
+            <strong>Serviceability</strong>
+            Better access to fasteners, wiring, and modular subassemblies for
+            iteration and repair.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Aakarsh Sangar</span>
+      <span>Robotics • Mechanical Design • AI</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

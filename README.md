@@ -72,6 +72,7 @@ For multiple project images, use `images` instead of `image`:
 Current project slots are based on the CV template:
 
 - Custom Robotic Arm
+  - Iteration page: `arm-iterations.html`
 - Jetson Orin Nano Robotics Platform
 - Faultline
 - Vision-Based Health Monitoring System

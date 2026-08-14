@@ -6,10 +6,10 @@
     "status": "2025-Present",
     "description": "Multi-joint robotic arm focused on mechanical design, actuator selection, manipulation, inverse kinematics, joint control, motion planning, and future computer-vision-guided autonomy.",
     "github": "",
-    "docs": "",
-    "docsLabel": "CAD / Docs",
-    "image": "./assets/projects/custom-robotic-arm-cover.png",
-    "imageAlt": "Updated CAD model of Aakarsh Sangar's custom robotic arm",
+    "docs": "./arm-iterations.html",
+    "docsLabel": "Arm Iterations",
+    "image": "./assets/projects/custom-robotic-arm-prototype.png",
+    "imageAlt": "Physical prototype of Aakarsh Sangar's custom robotic arm",
     "tags": ["CAD", "Stepper Motors", "Servo Motors", "Robotics", "Embedded Systems"]
   },
   {
