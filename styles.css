@@ -93,7 +93,7 @@ a {
 .hero {
   position: relative;
   display: grid;
-  min-height: 620px;
+  min-height: 460px;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
 }
@@ -124,7 +124,7 @@ a {
   align-self: center;
   width: min(1120px, calc(100% - 36px));
   margin: 0 auto;
-  padding: 72px 0;
+  padding: 52px 0;
 }
 
 .eyebrow {
@@ -169,7 +169,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 34px;
+  margin-top: 26px;
 }
 
 .button {
@@ -198,15 +198,15 @@ h2 {
 .section {
   width: min(1120px, calc(100% - 36px));
   margin: 0 auto;
-  padding: 76px 0;
+  padding: 54px 0;
 }
 
 .intro,
 .contact,
 .section-heading {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.7fr);
-  gap: clamp(28px, 7vw, 90px);
+  grid-template-columns: minmax(0, 0.55fr) minmax(300px, 1fr);
+  gap: clamp(24px, 5vw, 64px);
   align-items: start;
 }
 
@@ -221,18 +221,18 @@ h2 {
 
 .about-copy {
   display: grid;
-  gap: 18px;
+  gap: 14px;
 }
 
 .about-copy p {
   margin: 0;
   color: var(--muted);
   font-size: 1.02rem;
-  line-height: 1.75;
+  line-height: 1.62;
 }
 
 .learning {
-  padding-top: 18px;
+  padding-top: 10px;
 }
 
 .compact-heading {
@@ -256,7 +256,7 @@ h2 {
 }
 
 .projects-section {
-  padding-top: 28px;
+  padding-top: 22px;
 }
 
 .project-grid {
@@ -407,7 +407,7 @@ h2 {
 .detail-hero {
   width: min(1120px, calc(100% - 36px));
   margin: 0 auto;
-  padding: 72px 0 42px;
+  padding: 52px 0 30px;
 }
 
 .detail-kicker {

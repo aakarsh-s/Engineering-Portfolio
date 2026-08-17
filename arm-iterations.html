@@ -34,9 +34,9 @@
         <p class="detail-kicker">Custom Robotic Arm</p>
         <h1 id="iterations-title">Arm Iterations</h1>
         <p class="detail-copy">
-          A progression from early CAD architecture to a physical prototype,
-          with each revision improving stiffness, actuator packaging, mass
-          distribution, and serviceability.
+          A focused progression of the custom robotic arm from manufacturable
+          printed components to a full physical prototype, emphasizing stiffness,
+          actuator packaging, transmission design, and serviceability.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="./index.html#projects">Back to Projects</a>
@@ -46,52 +46,137 @@
       <section class="section iteration-grid" aria-label="Robotic arm iteration gallery">
         <article class="iteration-card">
           <img
-            src="./assets/projects/custom-robotic-arm-cad.png"
-            alt="Early CAD model of the robotic arm base and shoulder assembly"
+            src="./assets/arm-iterations/01-sliced-shoulder-plate.png"
+            alt="Sliced shoulder plate prepared for 3D printing"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Iteration 01 / Baseline Architecture</p>
-            <h2>Initial shoulder and base layout</h2>
+            <p class="eyebrow">Phase 01 / Manufacturing Setup</p>
+            <h2>Printed shoulder plate preparation</h2>
             <p>
-              This revision established the main revolute joints, base turntable,
-              belt-driven rotation concept, and high-level actuator placement.
+              Early CAD moved into slicer preparation, where geometry had to be
+              checked against print orientation, material settings, support
+              needs, and hole tolerances before committing to physical parts.
             </p>
             <ul>
-              <li>Defined the base yaw axis and shoulder pitch geometry.</li>
-              <li>Explored pulley-driven torque transmission around the base.</li>
-              <li>Used broad structural plates to validate linkage spacing and joint clearances.</li>
+              <li>Prepared a load-bearing shoulder side plate for additive manufacturing.</li>
+              <li>Checked printability of motor cutouts, mounting holes, and curved joint geometry.</li>
+              <li>Used slicing feedback to catch material/profile mismatches before fabrication.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/projects/custom-robotic-arm-cover.png"
-            alt="Updated CAD model of the robotic arm with truss-style link geometry"
+            src="./assets/arm-iterations/02-baseline-assembly.png"
+            alt="Baseline CAD assembly of the robotic arm"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Iteration 02 / Structural Optimization</p>
-            <h2>Trussed link and actuator integration</h2>
+            <p class="eyebrow">Phase 02 / System Architecture</p>
+            <h2>Baseline arm and turntable assembly</h2>
             <p>
-              The arm moved toward a lighter link structure with triangular
-              cutouts, improved actuator packaging, and a clearer load path from
-              the end effector back into the shoulder joint.
+              This full assembly established the main yaw base, shoulder pitch
+              axis, belt-driven base rotation, arm links, actuator locations,
+              and early end-effector placement.
             </p>
             <ul>
-              <li>Reduced link mass with truss-style geometry while preserving bending stiffness.</li>
-              <li>Improved motor packaging around the elbow and shoulder axes.</li>
-              <li>Added more accessible fastener locations for assembly and maintenance.</li>
+              <li>Defined the major rotational axes and mechanical envelope.</li>
+              <li>Explored timing-belt transmission for high-ratio base motion.</li>
+              <li>Validated rough joint spacing before detailed part optimization.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/projects/custom-robotic-arm-prototype.png"
+            src="./assets/arm-iterations/03-parallel-linkage.png"
+            alt="Parallel linkage and gear train concept for the robotic arm"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 03 / Linkage Development</p>
+            <h2>Parallel linkage and gear-driven motion</h2>
+            <p>
+              The arm geometry was refined into a more controlled linkage
+              architecture with paired members, gear coupling, and repeatable
+              mounting points for precise joint motion.
+            </p>
+            <ul>
+              <li>Used paired links to improve alignment and reduce off-axis loading.</li>
+              <li>Added gear coupling to transfer motion between linked members.</li>
+              <li>Improved fastener access and symmetric load distribution.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/04-actuator-cross-section.png"
+            alt="Cross-section of actuator and bearing stack-up"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 04 / Actuator Stack-Up</p>
+            <h2>Internal actuator packaging</h2>
+            <p>
+              A section view clarified the internal actuator stack-up, including
+              shaft alignment, bearing support, radial packaging, and the
+              interface between rotating and fixed structures.
+            </p>
+            <ul>
+              <li>Mapped the concentric shaft, bearing, and housing layout.</li>
+              <li>Reduced ambiguity around axial spacing and interference zones.</li>
+              <li>Designed around assembly order, retention, and service access.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/05-integrated-arm-cad.png"
+            alt="Integrated CAD model of the robotic arm with trussed links and gripper"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 05 / Integrated CAD Revision</p>
+            <h2>Trussed links, base gearing, and gripper integration</h2>
+            <p>
+              The mature CAD assembly combined the base ring gear, shoulder
+              structure, trussed arm segments, servo placement, and end effector
+              into one coherent mechanism.
+            </p>
+            <ul>
+              <li>Reduced link mass with triangular cutouts while maintaining bending stiffness.</li>
+              <li>Integrated actuator mounts directly into structural members.</li>
+              <li>Improved the load path from gripper through elbow, shoulder, and base.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/06-geared-gripper.png"
+            alt="Geared gripper mechanism designed for the robotic arm"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 06 / End Effector</p>
+            <h2>Geared gripper mechanism</h2>
+            <p>
+              The end effector became a dedicated geared subassembly rather than
+              a simple claw, improving symmetry, closure control, and future
+              compatibility with autonomous manipulation.
+            </p>
+            <ul>
+              <li>Used meshed gears to coordinate opposing finger motion.</li>
+              <li>Added pivot geometry and linkage spacing for stable gripping.</li>
+              <li>Separated the gripper module from the arm body for easier iteration.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/07-physical-prototype.png"
             alt="Physical prototype of the custom robotic arm with wiring and actuators"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Iteration 03 / Physical Prototype</p>
+            <p class="eyebrow">Phase 07 / Physical Prototype</p>
             <h2>Printed assembly and electronics integration</h2>
             <p>
               The current prototype brings the CAD system into hardware,
