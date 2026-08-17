@@ -9,6 +9,9 @@ if (year) {
 function createProjectCard(project) {
   const article = document.createElement("article");
   article.className = "project-card";
+  if (project.spotlight) {
+    article.classList.add("spotlight-card");
+  }
 
   const media = document.createElement("div");
   media.className = "project-media";

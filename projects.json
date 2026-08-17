@@ -13,6 +13,20 @@
     "tags": ["CAD", "Stepper Motors", "Servo Motors", "Robotics", "Embedded Systems"]
   },
   {
+    "title": "ModalAI Drone Systems Project",
+    "featured": true,
+    "spotlight": true,
+    "category": "Autonomous Drone Integration",
+    "status": "Sophomore Year / 2023-2024",
+    "description": "Hands-on autonomous drone integration project using a VOXL 2 Mini-based platform: hardware assembly, wiring repair, QGroundControl configuration, VOXL camera bring-up, camera calibration, thrust tuning, documentation, and flight testing.",
+    "github": "",
+    "docs": "./modalai-drone.html",
+    "docsLabel": "Drone Case Study",
+    "image": "./assets/modalai/modalai-drone-cover.png",
+    "imageAlt": "ModalAI drone platform with carbon frame, prop guards, battery, and onboard camera",
+    "tags": ["VOXL 2 Mini", "QGroundControl", "ADB", "Camera Calibration", "Flight Testing", "Documentation"]
+  },
+  {
     "title": "Jetson Orin Nano Robotics Platform",
     "featured": true,
     "category": "Robotics & Computer Vision",
@@ -59,19 +73,6 @@
     "image": "",
     "imageAlt": "Vision-based health monitoring project visualization",
     "tags": ["Computer Vision", "Machine Learning", "Python", "rPPG"]
-  },
-  {
-    "title": "ModalAI Robotics Internship",
-    "featured": false,
-    "category": "Engineering Experience",
-    "status": "2025",
-    "description": "Supported autonomous drone hardware development, Stinger V2 prototype assembly and validation, mechanical integration, troubleshooting, and computer-vision-enabled navigation testing.",
-    "github": "",
-    "docs": "",
-    "docsLabel": "Portfolio Notes",
-    "image": "",
-    "imageAlt": "Robotics hardware prototype or internship project image",
-    "tags": ["Robotics Hardware", "Embedded Systems", "Computer Vision", "Prototyping"]
   },
   {
     "title": "FIRST / FTC Robotics",

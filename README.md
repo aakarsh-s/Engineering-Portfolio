@@ -73,10 +73,11 @@ Current project slots are based on the CV template:
 
 - Custom Robotic Arm
   - Iteration page: `arm-iterations.html`
+- ModalAI Drone Systems Project
+  - Case study page: `modalai-drone.html`
 - Jetson Orin Nano Robotics Platform
 - Faultline
 - Vision-Based Health Monitoring System
-- ModalAI Robotics Internship
 - FIRST / FTC Robotics
 - CalHacks AI Hackathon
 - TritonHacks
