@@ -8,8 +8,8 @@
     "github": "",
     "docs": "./arm-iterations.html",
     "docsLabel": "Arm Iterations",
-    "image": "./assets/projects/custom-robotic-arm-prototype.png",
-    "imageAlt": "Physical prototype of Aakarsh Sangar's custom robotic arm",
+    "image": "./assets/arm-iterations/17-real-current-prototype.png",
+    "imageAlt": "Current physical prototype of Aakarsh Sangar's custom robotic arm with gripper and wiring",
     "tags": ["CAD", "Stepper Motors", "Servo Motors", "Robotics", "Embedded Systems"]
   },
   {

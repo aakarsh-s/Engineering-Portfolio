@@ -441,12 +441,42 @@ h2 {
   background: rgba(33, 26, 21, 0.88);
 }
 
+.featured-iteration {
+  border-color: rgba(217, 185, 140, 0.42);
+  background: rgba(42, 33, 26, 0.92);
+}
+
+.engineering-highlight {
+  border-color: rgba(240, 222, 194, 0.55);
+  background:
+    linear-gradient(135deg, rgba(217, 185, 140, 0.16), rgba(33, 26, 21, 0.94) 42%),
+    rgba(33, 26, 21, 0.92);
+}
+
 .iteration-card img {
   display: block;
   width: 100%;
   height: 100%;
   min-height: 320px;
   object-fit: cover;
+}
+
+.iteration-media {
+  display: grid;
+  min-height: 320px;
+  background: rgba(245, 239, 230, 0.12);
+}
+
+.split-media {
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: 1px;
+}
+
+.iteration-media img {
+  min-height: 0;
+  padding: 12px;
+  object-fit: contain;
+  background: #f7f4ef;
 }
 
 .iteration-body {
@@ -485,6 +515,95 @@ h2 {
 .technical-strip strong {
   display: block;
   margin-bottom: 8px;
+  color: var(--accent-2);
+}
+
+.component-section {
+  display: grid;
+  gap: 22px;
+  margin-top: 18px;
+  padding: 28px;
+  border: 1px solid rgba(217, 185, 140, 0.28);
+  border-radius: 8px;
+  background: rgba(22, 18, 15, 0.5);
+}
+
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.component-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(42, 33, 26, 0.64);
+}
+
+.component-feature {
+  border-color: rgba(240, 222, 194, 0.42);
+  background: rgba(56, 44, 34, 0.78);
+}
+
+.component-wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+}
+
+.component-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+  background: #f7f4ef;
+}
+
+.component-card div {
+  padding: 16px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.component-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent-2);
+}
+
+.supporting-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.supporting-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(42, 33, 26, 0.64);
+}
+
+.supporting-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+
+.supporting-card div {
+  padding: 16px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.supporting-card strong {
+  display: block;
+  margin-bottom: 6px;
   color: var(--accent-2);
 }
 
@@ -616,6 +735,9 @@ h2 {
 
   .iteration-card,
   .technical-strip,
+  .component-grid,
+  .component-wide,
+  .supporting-gallery,
   .case-study-grid,
   .process-step,
   .evidence-grid {
@@ -624,6 +746,15 @@ h2 {
 
   .iteration-card img {
     min-height: 260px;
+  }
+
+  .iteration-media {
+    min-height: 360px;
+  }
+
+  .split-media {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .intro,
@@ -690,6 +821,10 @@ h2 {
 
   .iteration-card img {
     min-height: 220px;
+  }
+
+  .iteration-media {
+    min-height: 300px;
   }
 
   .process-step img,

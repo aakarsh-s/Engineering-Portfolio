@@ -34,9 +34,10 @@
         <p class="detail-kicker">Custom Robotic Arm</p>
         <h1 id="iterations-title">Arm Iterations</h1>
         <p class="detail-copy">
-          A focused progression of the custom robotic arm from manufacturable
-          printed components to a full physical prototype, emphasizing stiffness,
-          actuator packaging, transmission design, and serviceability.
+          A curated build log showing the arm's progression from CAD and
+          manufacturable printed geometry into a wired, actuated physical
+          prototype with a yaw base, shoulder transmission, trussed links, and
+          gripper assembly.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="./index.html#projects">Back to Projects</a>
@@ -46,105 +47,63 @@
       <section class="section iteration-grid" aria-label="Robotic arm iteration gallery">
         <article class="iteration-card">
           <img
-            src="./assets/arm-iterations/01-sliced-shoulder-plate.png"
-            alt="Sliced shoulder plate prepared for 3D printing"
+            src="./assets/arm-iterations/18-cad-belt-shoulder-study.png"
+            alt="Early CAD concept of robotic arm shoulder belt reduction"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 01 / Manufacturing Setup</p>
-            <h2>Printed shoulder plate preparation</h2>
+            <p class="eyebrow">Phase 01 / Early Shoulder Concept</p>
+            <h2>Initial belt-reduction shoulder study</h2>
             <p>
-              Early CAD moved into slicer preparation, where geometry had to be
-              checked against print orientation, material settings, support
-              needs, and hole tolerances before committing to physical parts.
+              The first shoulder concept used a compact belt path around the
+              shoulder axis to increase torque while keeping the motor inside
+              the arm's mechanical envelope.
             </p>
             <ul>
-              <li>Prepared a load-bearing shoulder side plate for additive manufacturing.</li>
-              <li>Checked printability of motor cutouts, mounting holes, and curved joint geometry.</li>
-              <li>Used slicing feedback to catch material/profile mismatches before fabrication.</li>
+              <li>Established the basic motor-to-shoulder power-transfer direction.</li>
+              <li>Revealed that pulley diameter and belt wrap would be limited by packaging.</li>
+              <li>Created the design constraint that later led to a custom planetary reduction.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/arm-iterations/02-baseline-assembly.png"
-            alt="Baseline CAD assembly of the robotic arm"
+            src="./assets/arm-iterations/02-baseline-assembly-clean.png"
+            alt="Cleaned early full CAD assembly of the robotic arm"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 02 / System Architecture</p>
-            <h2>Baseline arm and turntable assembly</h2>
+            <p class="eyebrow">Phase 02 / First Full Layout</p>
+            <h2>Baseline arm and turntable architecture</h2>
             <p>
-              This full assembly established the main yaw base, shoulder pitch
-              axis, belt-driven base rotation, arm links, actuator locations,
-              and early end-effector placement.
+              The first full layout established the yaw base, shoulder pitch
+              axis, arm envelope, belt-driven base rotation, and rough actuator
+              placement.
             </p>
             <ul>
-              <li>Defined the major rotational axes and mechanical envelope.</li>
-              <li>Explored timing-belt transmission for high-ratio base motion.</li>
-              <li>Validated rough joint spacing before detailed part optimization.</li>
+              <li>Defined the major rotational axes and overall reach of the arm.</li>
+              <li>Connected the base ring gear and upper arm geometry into one system.</li>
+              <li>Exposed where structure, actuation, and wiring would compete for space.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/arm-iterations/03-parallel-linkage.png"
-            alt="Parallel linkage and gear train concept for the robotic arm"
+            src="./assets/arm-iterations/19-cad-trussed-shoulder-link.png"
+            alt="CAD model of trussed robotic arm shoulder link"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 03 / Linkage Development</p>
-            <h2>Parallel linkage and gear-driven motion</h2>
+            <p class="eyebrow">Phase 03 / Link Structure</p>
+            <h2>Trussed shoulder link and actuator mount</h2>
             <p>
-              The arm geometry was refined into a more controlled linkage
-              architecture with paired members, gear coupling, and repeatable
-              mounting points for precise joint motion.
+              The arm moved away from solid members toward a trussed link,
+              reducing mass while keeping bending stiffness and providing
+              integrated actuator mounting points.
             </p>
             <ul>
-              <li>Used paired links to improve alignment and reduce off-axis loading.</li>
-              <li>Added gear coupling to transfer motion between linked members.</li>
-              <li>Improved fastener access and symmetric load distribution.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <img
-            src="./assets/arm-iterations/04-actuator-cross-section.png"
-            alt="Cross-section of actuator and bearing stack-up"
-          />
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 04 / Actuator Stack-Up</p>
-            <h2>Internal actuator packaging</h2>
-            <p>
-              A section view clarified the internal actuator stack-up, including
-              shaft alignment, bearing support, radial packaging, and the
-              interface between rotating and fixed structures.
-            </p>
-            <ul>
-              <li>Mapped the concentric shaft, bearing, and housing layout.</li>
-              <li>Reduced ambiguity around axial spacing and interference zones.</li>
-              <li>Designed around assembly order, retention, and service access.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <img
-            src="./assets/arm-iterations/05-integrated-arm-cad.png"
-            alt="Integrated CAD model of the robotic arm with trussed links and gripper"
-          />
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 05 / Integrated CAD Revision</p>
-            <h2>Trussed links, base gearing, and gripper integration</h2>
-            <p>
-              The mature CAD assembly combined the base ring gear, shoulder
-              structure, trussed arm segments, servo placement, and end effector
-              into one coherent mechanism.
-            </p>
-            <ul>
-              <li>Reduced link mass with triangular cutouts while maintaining bending stiffness.</li>
-              <li>Integrated actuator mounts directly into structural members.</li>
-              <li>Improved the load path from gripper through elbow, shoulder, and base.</li>
+              <li>Used triangular ribbing to improve stiffness-to-weight ratio.</li>
+              <li>Positioned the motor mount close to the shoulder structure.</li>
+              <li>Refined the link around printability, fastener access, and joint clearance.</li>
             </ul>
           </div>
         </article>
@@ -155,7 +114,7 @@
             alt="Geared gripper mechanism designed for the robotic arm"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 06 / End Effector</p>
+            <p class="eyebrow">Phase 04 / End Effector</p>
             <h2>Geared gripper mechanism</h2>
             <p>
               The end effector became a dedicated geared subassembly rather than
@@ -172,24 +131,288 @@
 
         <article class="iteration-card">
           <img
-            src="./assets/arm-iterations/07-physical-prototype.png"
-            alt="Physical prototype of the custom robotic arm with wiring and actuators"
+            src="./assets/arm-iterations/01-sliced-shoulder-plate.png"
+            alt="Sliced shoulder plate prepared for 3D printing"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 07 / Physical Prototype</p>
-            <h2>Printed assembly and electronics integration</h2>
+            <p class="eyebrow">Phase 05 / Manufacturing Setup</p>
+            <h2>Printed shoulder plate preparation</h2>
             <p>
-              The current prototype brings the CAD system into hardware,
-              revealing real constraints around wiring, actuator mounting,
-              torsional compliance, and center-of-mass management.
+              CAD moved into slicer preparation, where shoulder geometry had to
+              be checked against print orientation, material settings, support
+              needs, and hole tolerances before committing to physical parts.
             </p>
             <ul>
-              <li>Validated printed part tolerances and mechanical fit-up.</li>
-              <li>Integrated servos, wiring, and power distribution around the moving joints.</li>
-              <li>Identified next improvements for cable routing, bearing support, and joint backlash reduction.</li>
+              <li>Prepared a load-bearing shoulder side plate for additive manufacturing.</li>
+              <li>Checked printability of motor cutouts, mounting holes, and curved joint geometry.</li>
+              <li>Used slicing feedback to catch fit issues before fabrication.</li>
             </ul>
           </div>
         </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/08-real-base-yaw-ring.png"
+            alt="Printed robotic arm base with ring gear and vertical shoulder supports"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 06 / Base Fabrication</p>
+            <h2>Printed yaw stage and ring gear</h2>
+            <p>
+              The first major physical subsystem translated the CAD turntable
+              into a printed yaw platform with a large ring gear, motor mount,
+              vertical shoulder plates, and a broad support footprint.
+            </p>
+            <ul>
+              <li>Validated bearing clearance and concentric gear alignment on the base.</li>
+              <li>Established the structural reference frame for the shoulder joint.</li>
+              <li>Kept the yaw actuator accessible for gear, belt, and wiring adjustments.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/09-real-linkage-assembly.png"
+            alt="Printed trussed arm linkage mounted to the robotic arm base"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 07 / Linkage Fit-Up</p>
+            <h2>Trussed arm mounted to the shoulder axis</h2>
+            <p>
+              The arm link was moved from CAD into a physical trussed member,
+              making stiffness, shaft alignment, fastener access, and link
+              clearance visible under real assembly constraints.
+            </p>
+            <ul>
+              <li>Used open truss geometry to reduce mass while resisting bending.</li>
+              <li>Checked shoulder-axis spacing against the printed side plates.</li>
+              <li>Confirmed that servo and linkage hardware could be accessed after assembly.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/12-real-shoulder-transmission.png"
+            alt="Close-up of physical belt-driven shoulder transmission"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 08 / Belt-Based Prototype</p>
+            <h2>Physical shoulder pulley and belt fit-up</h2>
+            <p>
+              The printed prototype still reflected the original belt-drive
+              direction, making the packaging problem visible in hardware:
+              the shoulder needed more torque, but the available space limited
+              pulley diameter and reduction ratio.
+            </p>
+            <ul>
+              <li>Tested shaft alignment, pulley spacing, and belt tracking in the printed shoulder.</li>
+              <li>Confirmed that packaging constraints limited the practical belt reduction.</li>
+              <li>Motivated the later custom planetary actuator as a compact torque solution.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/15-real-integrated-bench.png"
+            alt="Integrated robotic arm prototype on a workbench with electronics and wiring"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 09 / Integrated Prototype</p>
+            <h2>Multi-axis bench assembly</h2>
+            <p>
+              The arm reached a more complete hardware state with base rotation,
+              shoulder actuation, elbow linkage geometry, wiring, and control
+              hardware all present in one test setup.
+            </p>
+            <ul>
+              <li>Evaluated system-level packaging instead of isolated CAD parts.</li>
+              <li>Revealed cable-routing constraints around moving joints and rotating structures.</li>
+              <li>Connected mechanical design decisions to real actuator and driver behavior.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card engineering-highlight">
+          <div class="iteration-media split-media">
+            <img
+              src="./assets/arm-iterations/21-cad-planetary-drive-section.png"
+              alt="Section view of custom planetary shoulder drive"
+            />
+            <img
+              src="./assets/arm-iterations/22-cad-planetary-drive-exploded.png"
+              alt="Exploded CAD view of custom planetary shoulder drive"
+            />
+          </div>
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 10 / Custom Actuator</p>
+            <h2>Planetary shoulder drive for compact torque multiplication</h2>
+            <p>
+              After the belt-driven prototype showed that packaging prevented
+              a large enough pulley reduction, the shoulder was redesigned
+              around a custom planetary actuator. The exploded and section
+              views show the gear stack, retained shafts, housing, and bearing
+              support used to increase torque inside the constrained shoulder
+              volume.
+            </p>
+            <ul>
+              <li>Used internal gear reduction to increase shoulder torque without enlarging the belt system.</li>
+              <li>Packaged planet gears, bearing support, shafts, and retaining geometry inside one shoulder module.</li>
+              <li>Turned a packaging limitation into a more compact, purpose-built drivetrain.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/arm-iterations/20-cad-final-arm-assembly.png"
+            alt="Final CAD assembly of the robotic arm with planetary shoulder module"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 11 / Final CAD Direction</p>
+            <h2>Integrated CAD with planetary shoulder module</h2>
+            <p>
+              The final CAD revision brought together the trussed links, geared
+              gripper, yaw ring gear, base structure, and compact shoulder
+              actuator into a more complete system-level design.
+            </p>
+            <ul>
+              <li>Placed the custom shoulder drivetrain in the final mechanical envelope.</li>
+              <li>Integrated the end effector and link geometry around the actuator layout.</li>
+              <li>Created a more realistic reference for fabrication and assembly decisions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card featured-iteration">
+          <img
+            src="./assets/arm-iterations/17-real-current-prototype.png"
+            alt="Current physical prototype of Aakarsh Sangar's robotic arm with gripper and wiring"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 12 / Current Hardware State</p>
+            <h2>Full prototype with gripper and routed actuation</h2>
+            <p>
+              The latest build combines the yaw base, shoulder structure,
+              trussed links, pulley-driven joint hardware, servo-actuated
+              gripper, power electronics, and wiring into a functional
+              prototype ready for continued control refinement.
+            </p>
+            <ul>
+              <li>Transitioned from CAD validation to a physical robotic manipulator platform.</li>
+              <li>Integrated mechanical, electrical, and embedded-control work into one system.</li>
+              <li>Next improvements target cleaner cable management, backlash reduction, and closed-loop joint control.</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="component-section">
+          <div class="section-heading compact-heading">
+            <div>
+              <p class="eyebrow">CAD Components</p>
+              <h2>Component-Level Design Breakdown</h2>
+            </div>
+            <p>
+              These CAD views separate the key subassemblies behind the final
+              arm: the first pulley idea, the trussed shoulder link, the custom
+              planetary drive, the end effector, and the integrated final model.
+            </p>
+          </div>
+
+          <div class="component-grid" aria-label="Robotic arm CAD component list">
+            <article class="component-card">
+              <img
+                src="./assets/arm-iterations/18-cad-belt-shoulder-study.png"
+                alt="Early CAD belt reduction concept for shoulder joint"
+              />
+              <div>
+                <strong>Belt-Reduction Shoulder Study</strong>
+                Early shoulder-drive packaging study that showed the torque
+                reduction problem could not be solved cleanly with pulley size
+                alone.
+              </div>
+            </article>
+            <article class="component-card">
+              <img
+                src="./assets/arm-iterations/02-baseline-assembly-clean.png"
+                alt="Cleaned baseline CAD assembly of robotic arm"
+              />
+              <div>
+                <strong>Clean Baseline Assembly</strong>
+                Early full-system CAD layout after removing loose reference
+                parts, showing the initial shoulder, base, and arm envelope.
+              </div>
+            </article>
+            <article class="component-card">
+              <img
+                src="./assets/arm-iterations/19-cad-trussed-shoulder-link.png"
+                alt="CAD trussed link and shoulder support module"
+              />
+              <div>
+                <strong>Trussed Link Module</strong>
+                Lightweight arm link with triangular ribbing, integrated
+                mounting geometry, and shoulder-side load transfer.
+              </div>
+            </article>
+            <article class="component-card">
+              <img
+                src="./assets/arm-iterations/03-parallel-linkage.png"
+                alt="CAD paired linkage and gear transfer concept"
+              />
+              <div>
+                <strong>Paired Linkage Gear Concept</strong>
+                Intermediate linkage study using paired members and gear
+                coupling to keep motion aligned while distributing joint loads.
+              </div>
+            </article>
+            <article class="component-card component-feature">
+              <img
+                src="./assets/arm-iterations/22-cad-planetary-drive-exploded.png"
+                alt="Exploded CAD view of custom planetary shoulder drive"
+              />
+              <div>
+                <strong>Custom Planetary Drive Stack</strong>
+                Exploded view of the compact shoulder gearbox designed to
+                multiply torque inside the limited shoulder package.
+              </div>
+            </article>
+            <article class="component-card component-feature">
+              <img
+                src="./assets/arm-iterations/21-cad-planetary-drive-section.png"
+                alt="Section CAD view of custom planetary shoulder gearbox"
+              />
+              <div>
+                <strong>Planetary Gear Section</strong>
+                Section view showing the internal gear mesh, retained shafts,
+                bearing support, and housing geometry for the shoulder drive.
+              </div>
+            </article>
+            <article class="component-card">
+              <img
+                src="./assets/arm-iterations/06-geared-gripper.png"
+                alt="CAD geared gripper mechanism"
+              />
+              <div>
+                <strong>Geared Gripper</strong>
+                Coordinated end-effector mechanism using meshed gears for
+                symmetric finger motion and modular future iteration.
+              </div>
+            </article>
+            <article class="component-card component-wide">
+              <img
+                src="./assets/arm-iterations/20-cad-final-arm-assembly.png"
+                alt="Final CAD robotic arm assembly"
+              />
+              <div>
+                <strong>Final CAD Assembly</strong>
+                Full-system CAD view combining the yaw base, trussed links,
+                gripper, and compact shoulder drivetrain.
+              </div>
+            </article>
+          </div>
+        </div>
 
         <div class="technical-strip" aria-label="Technical improvement summary">
           <div>
@@ -207,6 +430,42 @@
             Better access to fasteners, wiring, and modular subassemblies for
             iteration and repair.
           </div>
+        </div>
+
+        <div class="supporting-gallery" aria-label="Supporting robotic arm build evidence">
+          <article class="supporting-card">
+            <img
+              src="./assets/arm-iterations/10-real-overhead-fit-check.png"
+              alt="Overhead fit check of the robotic arm linkage and base"
+            />
+            <div>
+              <strong>Fit Check</strong>
+              Overhead inspection of link clearance, fastener access, and
+              workspace constraints during assembly.
+            </div>
+          </article>
+          <article class="supporting-card">
+            <img
+              src="./assets/arm-iterations/13-real-step-dir-code.png"
+              alt="Arduino IDE showing step and direction pulse code"
+            />
+            <div>
+              <strong>Motion Control</strong>
+              Step and direction pulse testing for deterministic stepper motor
+              movement before higher-level control.
+            </div>
+          </article>
+          <article class="supporting-card">
+            <img
+              src="./assets/arm-iterations/14-real-stepper-driver.png"
+              alt="Stepper driver module, pinout reference card, and heat sink"
+            />
+            <div>
+              <strong>Driver Bring-Up</strong>
+              Driver pinout mapping, thermal preparation, and wiring checks for
+              reliable actuator testing.
+            </div>
+          </article>
         </div>
       </section>
     </main>
