@@ -8,139 +8,68 @@
       content="Aakarsh Sangar's robotics, mechanical engineering, and AI project portfolio."
     />
     <title>Aakarsh Sangar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <header class="site-header" aria-label="Primary">
-      <a class="brand" href="#top" aria-label="Aakarsh Sangar home">
-        <span class="brand-mark" aria-hidden="true">AS</span>
-        <span>Aakarsh Sangar</span>
-      </a>
-      <nav class="nav-links" aria-label="Page sections">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#learning">Learning</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <body class="reference-home">
+    <main class="reference-shell" id="top">
+      <section class="reference-panel" aria-labelledby="home-title">
+        <div class="identity-block">
+          <h1 id="home-title">Aakarsh Sangar</h1>
+          <p>Robotics & Mechanical Engineering Student</p>
+          <p>San Diego, CA / Purdue University</p>
+        </div>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <img
-          class="hero-image"
-          src="./assets/hero-blueblack.png"
-          alt=""
-          aria-hidden="true"
-        />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Robotics & Mechanical Engineering Student</p>
-          <h1 id="hero-title">Aakarsh Sangar</h1>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#projects">Projects</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/aakarsh-sangar/" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a class="button secondary" href="https://github.com/aakarsh-s" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-          </div>
-        </div>
-      </section>
+        <nav class="reference-nav" aria-label="Portfolio links">
+          <a href="#about">about</a>
+          <a href="./arm-iterations.html">robotic arm</a>
+          <a href="./modalai-drone.html">modalai drone</a>
+          <a href="https://github.com/aakarsh-s/Faultline-2/tree/main/Faultline%202" target="_blank" rel="noreferrer">faultline</a>
+          <a href="./projects.html">projects</a>
+          <a href="#progress">in progress</a>
+          <a href="#learning">learning</a>
+        </nav>
 
-      <section class="section intro" id="about" aria-labelledby="about-title">
-        <div>
-          <h2 id="about-title">About Me</h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            I am an incoming First-Year Engineering student at Purdue University
-            with a strong interest in robotics, autonomous systems, and
-            mechanical design. I am passionate about building systems that
-            combine hardware, software, and artificial intelligence to solve
-            complex real-world problems.
-          </p>
-          <p>
-            My interest in engineering has grown through hands-on projects
-            involving robotics, computer vision, and mechanical prototyping. I
-            enjoy taking ideas from concept to reality: designing components in
-            CAD, experimenting with electronics and actuators, programming
-            intelligent systems, and iterating through challenges during the
-            development process. My recent work includes a custom robotic arm,
-            Jetson-based computer vision, autonomous drone integration, and
-            AI-focused research tools.
-          </p>
-        </div>
-      </section>
-
-      <section class="section learning" id="learning" aria-labelledby="learning-title">
-        <div class="section-heading compact-heading">
-          <div>
-            <p class="eyebrow">Currently Exploring</p>
-            <h2 id="learning-title">Direction, curiosity, and next tools.</h2>
-          </div>
-          <div class="learning-list" aria-label="Current learning topics">
-            <span>Robot kinematics</span>
-            <span>Inverse kinematics</span>
-            <span>ROS2</span>
-            <span>Jetson robotics</span>
-            <span>Control systems</span>
-            <span>C++ for robotics</span>
-            <span>CAD optimization</span>
-            <span>Mechanical design</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Featured Projects</p>
-            <h2 id="projects-title">Selected work.</h2>
-          </div>
-          <p>
-            Robotics, embedded AI, and machine learning projects that show how I
-            think through real engineering problems.
-          </p>
-        </div>
-        <div class="project-grid featured-grid" id="featured-grid" aria-live="polite"></div>
-
-        <div class="section-heading archive-heading">
-          <div>
-            <p class="eyebrow">Project Slots</p>
-            <h2>More work to document.</h2>
-          </div>
-          <p>
-            Each slot can hold a project image, GitHub repository, CAD link,
-            demo, or writeup as those materials are added.
-          </p>
-        </div>
-        <div class="project-grid" id="project-grid" aria-live="polite"></div>
-      </section>
-
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Open to building, learning, and research.</h2>
-        </div>
-        <p>
-          I am especially interested in robotics, robot learning, mechanical
-          design, autonomous systems, computer vision, and control.
+        <p class="reference-bio" id="about">
+          I am an incoming First-Year Engineering student at Purdue University
+          interested in robotics, autonomous systems, and mechanical design. My
+          work focuses on building systems across CAD, actuators, embedded
+          computing, computer vision, and artificial intelligence. I am
+          currently working on a VLA model for my robotic arm: an embedded AI
+          system that uses computer vision to detect a block's color and pick
+          it up when prompted.
         </p>
+
+        <section class="reference-list" id="progress" aria-label="Work in progress">
+          <p>in progress</p>
+          <span>vla model for robotic arm color detection and block pickup</span>
+          <span>jetson orin nano robotics platform for embedded ai and vla deployment</span>
+          <span>jetson-based rppg pipeline experimentation</span>
+        </section>
+
+        <section class="reference-list" id="learning" aria-label="Current learning">
+          <p>currently exploring</p>
+          <span>robot kinematics</span>
+          <span>inverse kinematics</span>
+          <span>ros2</span>
+          <span>jetson robotics</span>
+          <span>control systems</span>
+          <span>c++ for robotics</span>
+        </section>
+
+        <footer class="reference-footer" id="contact">
+          <div>
+            <a href="./README.md">resume</a>/<a href="https://github.com/aakarsh-s" target="_blank" rel="noreferrer">github</a>/<a href="https://www.linkedin.com/in/aakarsh-sangar/" target="_blank" rel="noreferrer">linkedin</a>
+          </div>
+          <span>© 2026 Aakarsh Sangar</span>
+        </footer>
       </section>
+
+      <aside class="reference-visual" aria-hidden="true">
+        <img
+          src="./assets/arm-iterations/17-real-current-prototype.png"
+          alt=""
+        />
+      </aside>
     </main>
-
-    <footer class="footer">
-      <span>© <span id="year"></span> Aakarsh Sangar</span>
-      <span>Robotics • Mechanical Design • AI</span>
-    </footer>
-
-    <script src="./script.js"></script>
   </body>
 </html>

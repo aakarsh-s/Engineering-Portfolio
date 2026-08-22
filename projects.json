@@ -28,16 +28,16 @@
   },
   {
     "title": "Jetson Orin Nano Robotics Platform",
-    "featured": true,
-    "category": "Robotics & Computer Vision",
-    "status": "2026",
-    "description": "NVIDIA Jetson Orin Nano robotics computing platform for real-time perception, edge AI deployment, Linux development, Docker workflows, and hardware/software troubleshooting.",
+    "featured": false,
+    "category": "In Progress / Embedded AI Robotics",
+    "status": "VLA Model Development",
+    "description": "NVIDIA Jetson Orin Nano robotics computing platform currently being used for an embedded VLA model for the robotic arm, with the goal of using computer vision to detect a block's color and pick it up when prompted. I have also used the Jetson platform for rPPG pipeline experimentation.",
     "github": "",
     "docs": "",
     "docsLabel": "Build Notes",
     "image": "",
     "imageAlt": "Jetson Orin Nano robotics platform setup",
-    "tags": ["Python", "OpenCV", "MediaPipe", "NVIDIA Jetson", "Linux", "Docker"]
+    "tags": ["VLA", "Embedded AI", "OpenCV", "NVIDIA Jetson", "Linux", "rPPG"]
   },
   {
     "title": "Faultline",
@@ -66,7 +66,7 @@
     "featured": true,
     "category": "rPPG & Computer Vision",
     "status": "2026",
-    "description": "Computer vision approach for estimating physiological signals from camera input, exploring remote photoplethysmography and non-contact heart-rate monitoring.",
+    "description": "Computer vision approach for estimating physiological signals from camera input, exploring remote photoplethysmography and non-contact heart-rate monitoring through an rPPG pipeline tested with the Jetson Orin Nano platform.",
     "github": "",
     "docs": "",
     "docsLabel": "Research Notes",
@@ -86,44 +86,5 @@
     "image": "",
     "imageAlt": "FIRST or FTC competition robot",
     "tags": ["Mechanical Design", "Motors", "Sensors", "Robot Integration"]
-  },
-  {
-    "title": "CalHacks AI Hackathon",
-    "featured": false,
-    "category": "Hackathon",
-    "status": "UC Berkeley 2026",
-    "description": "Fast-paced AI prototype development using multi-agent architectures, collaborative engineering, and presentation of a functional research-assistant platform.",
-    "github": "",
-    "docs": "",
-    "docsLabel": "Submission",
-    "image": "",
-    "imageAlt": "CalHacks AI hackathon demo or team project",
-    "tags": ["AI", "Agents", "Prototyping", "Presentation"]
-  },
-  {
-    "title": "TritonHacks",
-    "featured": false,
-    "category": "Hackathon",
-    "status": "UC San Diego 2025",
-    "description": "AI-based application prototype focused on solving real-world problems through external APIs and machine learning tools.",
-    "github": "",
-    "docs": "",
-    "docsLabel": "Submission",
-    "image": "",
-    "imageAlt": "TritonHacks project demo or app screenshot",
-    "tags": ["AI", "APIs", "Machine Learning", "Prototype"]
-  },
-  {
-    "title": "Science Olympiad Coaching",
-    "featured": false,
-    "category": "Leadership",
-    "status": "Canyon Crest Academy",
-    "description": "Mentored younger students in engineering and science concepts, technical problem solving, and preparation for competitions.",
-    "github": "",
-    "docs": "",
-    "docsLabel": "Highlights",
-    "image": "",
-    "imageAlt": "Science Olympiad coaching or competition materials",
-    "tags": ["Mentorship", "Engineering", "Science Communication"]
   }
 ]
