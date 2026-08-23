@@ -31,9 +31,9 @@
     "category": "Multi-Agent AI Research Assistant",
     "status": "CalHacks AI 2026",
     "description": "Multi-agent research tool created at CalHacks AI Hackathon to analyze academic literature, identify conflicting claims between papers, summarize findings, compare methods, and propose validation experiments.",
-    "github": "https://devpost.com/software/faultline-0px7tq",
-    "docs": "",
-    "docsLabel": "Demo / Notes",
+    "github": "",
+    "docs": "./faultline.html",
+    "docsLabel": "Project Links",
     "images": [
       {
         "src": "./assets/projects/faultline-saved-investigation.png",
@@ -54,8 +54,8 @@
     "status": "2026",
     "description": "Computer vision approach for estimating physiological signals from camera input, exploring remote photoplethysmography and non-contact heart-rate monitoring through an rPPG pipeline tested with the Jetson Orin Nano platform.",
     "github": "",
-    "docs": "",
-    "docsLabel": "Research Notes",
+    "docs": "./rppg-pipeline.html",
+    "docsLabel": "Project Links",
     "image": "",
     "imageAlt": "Vision-based health monitoring project visualization",
     "tags": ["Computer Vision", "Machine Learning", "Python", "rPPG"]
