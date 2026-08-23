@@ -13,20 +13,6 @@
     "tags": ["CAD", "Stepper Motors", "Servo Motors", "Robotics", "Embedded Systems"]
   },
   {
-    "title": "ModalAI Internship",
-    "featured": true,
-    "spotlight": true,
-    "category": "Autonomous Drone Systems",
-    "status": "Sophomore Year / 2023-2024",
-    "description": "Sophomore-year internship focused on a VOXL 2 Mini-based autonomous drone platform: hardware assembly, wiring repair, QGroundControl configuration, VOXL camera bring-up, camera calibration, thrust tuning, documentation, and flight testing.",
-    "github": "",
-    "docs": "./modalai-drone.html",
-    "docsLabel": "Internship Notes",
-    "image": "./assets/modalai/modalai-drone-cover.jpg",
-    "imageAlt": "ModalAI drone platform with carbon frame, prop guards, battery, and onboard camera",
-    "tags": ["VOXL 2 Mini", "QGroundControl", "ADB", "Camera Calibration", "Flight Testing", "Documentation"]
-  },
-  {
     "title": "Jetson Orin Nano Robotics Platform",
     "featured": false,
     "category": "In Progress / Embedded AI Robotics",
