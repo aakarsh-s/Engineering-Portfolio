@@ -1635,7 +1635,9 @@ h2,
 
 .reference-list span,
 .reference-list a {
-  width: max-content;
+  display: block;
+  width: auto;
+  max-width: min(34vw, 640px);
 }
 
 .reference-footer {
@@ -2011,17 +2013,108 @@ h2,
   object-position: left top;
 }
 
+/* Compact ModalAI internship timeline. */
+.modalai-detail .process-list {
+  gap: 0;
+}
+
+.modalai-detail .process-step {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 18px 0;
+}
+
+.modalai-detail .process-step:first-child {
+  border-top: 0;
+}
+
+.modalai-detail .process-step > img,
+.modalai-detail .process-step > video {
+  width: 100%;
+  max-height: 180px;
+  margin-bottom: 0;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.modalai-detail .flight-step {
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+}
+
+.modalai-detail .flight-step > video {
+  width: min(100%, 280px);
+  height: 390px;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modalai-detail .process-body {
+  max-width: none;
+}
+
+.modalai-detail .process-body h2 {
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+}
+
+.modalai-detail .process-body p,
+.modalai-detail .process-body li,
+.modalai-detail .note-card p {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.modalai-detail .process-body ul {
+  margin-top: 10px;
+}
+
+.modalai-detail .notes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.modalai-detail .modalai-notes .section-heading {
+  display: block;
+  text-align: center;
+}
+
+.modalai-detail .modalai-notes .section-heading > div {
+  margin: 0 auto;
+}
+
+.modalai-detail .modalai-notes h2 {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.modalai-detail .note-card {
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 16px 0;
+}
+
 @media (max-width: 760px) {
   .arm-detail .iteration-card,
   .arm-detail .component-grid,
-  .arm-detail .supporting-gallery {
+  .arm-detail .supporting-gallery,
+  .modalai-detail .process-step,
+  .modalai-detail .notes-grid {
     grid-template-columns: 1fr;
   }
 
   .arm-detail .iteration-card > img,
   .arm-detail .iteration-media img,
   .arm-detail .component-card > img,
-  .arm-detail .supporting-card > img {
+  .arm-detail .supporting-card > img,
+  .modalai-detail .process-step > img,
+  .modalai-detail .process-step > video {
     max-height: none;
+  }
+
+  .modalai-detail .flight-step > video {
+    width: min(100%, 300px);
+    height: 420px;
   }
 }

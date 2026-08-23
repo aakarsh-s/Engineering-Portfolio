@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="ModalAI drone integration case study by Aakarsh Sangar."
+      content="ModalAI internship case study by Aakarsh Sangar."
     />
-    <title>ModalAI Drone Systems Project | Aakarsh Sangar</title>
+    <title>ModalAI Internship | Aakarsh Sangar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="detail-page">
+  <body class="detail-page modalai-detail">
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="./index.html" aria-label="Aakarsh Sangar home">
         <span class="brand-mark" aria-hidden="true">AS</span>
@@ -31,13 +31,13 @@
 
     <main>
       <section class="detail-hero" aria-labelledby="modalai-title">
-        <p class="detail-kicker">ModalAI / Autonomous Drone Integration</p>
-        <h1 id="modalai-title">From kit assembly to controlled flight testing.</h1>
+        <p class="detail-kicker">Autonomous Drone Integration</p>
+        <h1 id="modalai-title">ModalAI Internship</h1>
         <p class="detail-copy">
-          A sophomore-year high school engineering project focused on taking a
-          ModalAI-style autonomous drone kit from hardware assembly through
-          software configuration, sensor bring-up, camera calibration, failure
-          analysis, documentation, and flight validation.
+          Sophomore-year high school internship work focused on taking a VOXL 2
+          Mini-based drone platform through hardware assembly, wiring repair,
+          QGroundControl tuning, camera bring-up, calibration, documentation,
+          and flight testing.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="./index.html#projects">Back to Projects</a>
@@ -59,45 +59,25 @@
           </a>
         </div>
 
-        <div class="case-study-grid" aria-label="Project summary">
-          <div class="case-study-stat">
-            <strong>VOXL</strong>
-            Worked through VOXL portal, ADB shell, QGroundControl, and camera services.
-          </div>
-          <div class="case-study-stat">
-            <strong>32k</strong>
-            Tuned max RPM from 15000 to 32000 while debugging thrust and stability.
-          </div>
-          <div class="case-study-stat">
-            <strong>0.491</strong>
-            Camera calibration reprojection error reported after successful calibration.
-          </div>
-          <div class="case-study-stat">
-            <strong>2024</strong>
-            Documented build logs show iterative debugging, repair, and validation.
-          </div>
-        </div>
       </section>
 
-      <section class="section process-list" aria-label="Step by step problem solving process">
-        <article class="process-step">
+      <section class="section process-list" aria-label="ModalAI internship phase log">
+        <article class="process-step flight-step">
           <img
             src="./assets/modalai/modalai-process-flow.jpg"
             alt="Handwritten process flow for drone hardware setup, software setup, and flight"
           />
           <div class="process-body">
-            <p class="eyebrow">Step 01 / System decomposition</p>
-            <h2>Converted the kit into an engineering workflow.</h2>
+            <p class="eyebrow">Phase 01 / System Plan</p>
+            <h2>Build workflow</h2>
             <p>
-              We broke the project into hardware setup, software setup, and
-              flight validation: frame, motors, cameras, chips, wiring, battery,
-              RC setup, ADB, camera software, controller connection,
-              QGroundControl, and final flight testing.
+              Broke the internship work into hardware setup, software setup,
+              and flight validation so the drone could be brought up in a
+              repeatable sequence instead of debugged as one large system.
             </p>
             <ul>
-              <li>Mapped the build sequence before touching flight-critical settings.</li>
-              <li>Separated mechanical assembly, embedded configuration, and test operations.</li>
-              <li>Turned the workflow into an instruction manual for repeatability.</li>
+              <li>Separated frame, motors, camera hardware, RC setup, ADB, QGC, and flight testing.</li>
+              <li>Used the plan as the basis for the instruction manual.</li>
             </ul>
           </div>
         </article>
@@ -108,19 +88,16 @@
             alt="Assembled ModalAI drone on a workbench"
           />
           <div class="process-body">
-            <p class="eyebrow">Step 02 / Hardware integration</p>
-            <h2>Built the airframe and packaged the electronics.</h2>
+            <p class="eyebrow">Phase 02 / Airframe</p>
+            <h2>Hardware integration</h2>
             <p>
-              The assembled drone combined a carbon frame, protected propeller
-              layout, battery retention, motor assemblies, camera hardware, and
-              onboard compute. This stage made the project more than a software
-              demo: wiring, fasteners, mass distribution, and access to chips
-              all affected whether the system could be tested safely.
+              Assembled the drone platform around the carbon frame, protected
+              propeller layout, battery retention, motor assemblies, camera
+              hardware, and onboard compute.
             </p>
             <ul>
               <li>Integrated motors, cameras, battery, chip stack, and wiring harnesses.</li>
-              <li>Checked mechanical clearance around propellers and protective ducts.</li>
-              <li>Prepared the system for RC/QGC bring-up and bench validation.</li>
+              <li>Checked propeller clearance and access to flight-critical electronics.</li>
             </ul>
           </div>
         </article>
@@ -131,66 +108,58 @@
             alt="Aakarsh working on the drone assembly at a workbench"
           />
           <div class="process-body">
-            <p class="eyebrow">Step 03 / Bench debugging</p>
-            <h2>Diagnosed issues at the component level.</h2>
+            <p class="eyebrow">Phase 03 / Bench Work</p>
+            <h2>Component-level debugging</h2>
             <p>
-              Before stable flight, the project required close inspection of
-              board connections and exposed wiring. The logs show the team
-              documenting damaged parts, sending evidence to a mentor, and
-              treating failures as engineering feedback rather than one-off
-              mistakes.
+              Inspected wiring, board connections, and exposed conductors before
+              returning to flight testing. Damaged parts were documented and
+              used to plan repairs with mentor feedback.
             </p>
             <ul>
               <li>Inspected GPS/ELRS-related wiring after a crash event.</li>
-              <li>Documented damaged conductors and connector-side issues.</li>
-              <li>Used the evidence to plan repair before attempting another flight.</li>
+              <li>Documented connector-side damage before another flight attempt.</li>
             </ul>
           </div>
         </article>
 
         <article class="process-step">
           <img
-            src="./assets/modalai/modalai-log-thrust-gps.png"
-            alt="Build log describing arming, insufficient thrust, and GPS chip connection"
+            src="./assets/modalai/modalai-wire-damage.jpg"
+            alt="Damaged drone wiring close-up"
           />
           <div class="process-body">
-            <p class="eyebrow">Step 04 / Arming and thrust characterization</p>
-            <h2>Moved from arming to lift-off diagnosis.</h2>
+            <p class="eyebrow">Phase 04 / Repair Loop</p>
+            <h2>Crash damage analysis</h2>
             <p>
-              The drone eventually armed and spun its propellers, with the rear
-              partially lifting. The system still lacked enough thrust for
-              controlled takeoff, so the next engineering question became
-              whether the limitation was software configuration, thrust mapping,
-              motor output, or sensor state.
+              After an unstable flight attempt, one damaged wire was traced to
+              the GPS-side connection path. The rest of the drone remained
+              usable, so the repair plan focused on replacing the damaged
+              conductor and preserving the test platform.
             </p>
             <ul>
-              <li>Verified arming behavior and propeller spin-up.</li>
-              <li>Observed partial lift rather than stable takeoff.</li>
-              <li>Identified thrust configuration and GPS connection as key follow-up items.</li>
+              <li>Documented damaged wiring before continuing test cycles.</li>
+              <li>Connected physical damage back to flight instability and sensor reliability.</li>
             </ul>
           </div>
         </article>
 
         <article class="process-step">
           <img
-            src="./assets/modalai/modalai-log-rpm-crash.png"
-            alt="Build log describing max RPM change from 15000 to 32000 and crash analysis"
+            src="./assets/modalai/modalai-elrs-board.jpg"
+            alt="ELRS board and stripped wires close-up"
           />
           <div class="process-body">
-            <p class="eyebrow">Step 05 / QGroundControl tuning and failure analysis</p>
-            <h2>Increased thrust, then analyzed instability.</h2>
+            <p class="eyebrow">Phase 05 / GPS Repair</p>
+            <h2>Chip replacement and rewiring</h2>
             <p>
-              We updated the max RPM parameter in QGroundControl from 15000 to
-              32000 to generate adequate thrust. The drone lifted, but the
-              response became unstable: it rose uncontrollably, did not descend
-              properly during disarm, and crashed. The result was still useful:
-              it proved the platform could generate lift and exposed a control
-              and safety envelope problem.
+              After the unstable lift test, the GPS-side wiring and receiver
+              board connections had to be inspected closely. The image shows
+              the damaged connection work that led to replacing and rewiring
+              the GPS chip path before the drone could safely return to testing.
             </p>
             <ul>
-              <li>Validated that insufficient thrust was not purely mechanical.</li>
-              <li>Observed unstable vertical response after the RPM increase.</li>
-              <li>Documented damaged wiring before continuing the test cycle.</li>
+              <li>Identified the GPS chip connection as the damaged subsystem.</li>
+              <li>Prepared the replacement wiring before continuing flight validation.</li>
             </ul>
           </div>
         </article>
@@ -201,19 +170,57 @@
             alt="Diagram mapping M0149 and M0107 cameras into the VOXL 2 Mini J6 connector"
           />
           <div class="process-body">
-            <p class="eyebrow">Step 06 / Camera and VOXL bring-up</p>
-            <h2>Connected the camera stack into the VOXL system.</h2>
+            <p class="eyebrow">Phase 06 / VOXL Bring-Up</p>
+            <h2>Camera stack integration</h2>
             <p>
-              The camera work required mapping the M0149 tracking camera and
-              M0107 hires camera into the VOXL 2 Mini connector stack. Build
-              logs show camera-chip connection work, verification through ADB
-              shell, QGC, and VOXL portal, and continued debugging when the
-              camera connection existed but the output was not yet visible.
+              Connected the M0149 tracking camera and M0107 hires camera into
+              the VOXL 2 Mini connector stack, then verified the connection path
+              through ADB shell, QGroundControl, and VOXL portal debugging.
             </p>
             <ul>
-              <li>Connected camera hardware into the VOXL chip stack.</li>
-              <li>Verified the connection through lower-level system tools.</li>
-              <li>Continued debugging the output path into VOXL portal/QGC.</li>
+              <li>Mapped camera hardware into the VOXL chip stack.</li>
+              <li>Debugged the output path into VOXL portal and QGroundControl.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="process-step">
+          <img
+            src="./assets/modalai/modalai-camera-view.png"
+            alt="VOXL camera view in grayscale"
+          />
+          <div class="process-body">
+            <p class="eyebrow">Phase 07 / Sensor Output</p>
+            <h2>Camera stream validation</h2>
+            <p>
+              Validated camera visibility from the drone's point of view and
+              used the output to continue the perception bring-up path before
+              calibration.
+            </p>
+            <ul>
+              <li>Verified camera output instead of only confirming the connector state.</li>
+              <li>Prepared the sensor stream for calibration and downstream perception use.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="process-step">
+          <img
+            src="./assets/modalai/modalai-calibration-overlay.jpg"
+            alt="Camera calibration overlay on checkerboard"
+          />
+          <div class="process-body">
+            <p class="eyebrow">Phase 08 / Calibration</p>
+            <h2>Fisheye tracking calibration</h2>
+            <p>
+              Ran the VOXL camera calibration workflow with a 9x6 target and
+              collected feature tracks across the frame. After earlier failed
+              attempts caused by target flatness, the calibration succeeded and
+              stored OpenCV tracking intrinsics.
+            </p>
+            <ul>
+              <li>Used <code>voxl-calibrate-camera tracking -f -s 9x6 -l 0.0165</code>.</li>
+              <li>Recorded a 0.491094 reprojection error before saving calibration data.</li>
             </ul>
           </div>
         </article>
@@ -224,19 +231,17 @@
             alt="Terminal output showing successful VOXL camera calibration"
           />
           <div class="process-body">
-            <p class="eyebrow">Step 07 / Camera calibration</p>
-            <h2>Calibrated the fisheye tracking camera.</h2>
+            <p class="eyebrow">Phase 09 / System Confirmation</p>
+            <h2>Calibration saved</h2>
             <p>
-              The calibration workflow used the VOXL camera calibration tool
-              with a 9x6 target and stored OpenCV tracking intrinsics. After
-              multiple failed attempts due to finding a sufficiently flat target
-              setup, the calibration succeeded and wrote data to the VOXL
-              tracking intrinsics file.
+              The terminal output confirmed successful calibration and wrote
+              the tracking intrinsics to the VOXL file system, closing the loop
+              between camera hardware, calibration software, and saved sensor
+              configuration.
             </p>
             <ul>
-              <li>Ran <code>voxl-calibrate-camera tracking -f -s 9x6 -l 0.0165</code>.</li>
-              <li>Captured a successful fisheye distortion model and intrinsic matrix.</li>
-              <li>Recorded a reprojection error of 0.491094 before saving calibration data.</li>
+              <li>Captured fisheye distortion and intrinsic matrix output.</li>
+              <li>Saved data to <code>/data/modalai/opencv_tracking_intrinsics.yml</code>.</li>
             </ul>
           </div>
         </article>
@@ -247,60 +252,68 @@
             Your browser does not support embedded video.
           </video>
           <div class="process-body">
-            <p class="eyebrow">Step 08 / Flight validation</p>
-            <h2>Closed the loop with physical test evidence.</h2>
+            <p class="eyebrow">Phase 10 / Flight Test</p>
+            <h2>Physical validation</h2>
             <p>
-              The flight video documents the project moving from bench assembly
-              into real-world validation. Even when the system behavior exposed
-              instability, the test cycle created useful data: thrust response,
-              disarm behavior, damage modes, and the next set of changes needed
-              for safer controlled flight.
+              The flight test moved the internship work from bench validation
+              into physical behavior. The test cycle produced useful data on
+              thrust response, disarm behavior, damage modes, and the next set
+              of stability changes needed for safer controlled flight.
             </p>
             <ul>
-              <li>Validated that software changes affected actual lift behavior.</li>
-              <li>Captured physical behavior rather than relying only on bench assumptions.</li>
-              <li>Converted the test outcome into repair, tuning, and documentation tasks.</li>
+              <li>Validated that QGroundControl changes affected real lift behavior.</li>
+              <li>Converted flight outcomes into repair, tuning, and documentation tasks.</li>
             </ul>
           </div>
         </article>
       </section>
 
-      <section class="section" aria-labelledby="evidence-title">
+      <section class="section modalai-notes" aria-labelledby="notes-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Evidence Gallery</p>
-            <h2 id="evidence-title">Debugging artifacts and build notes.</h2>
+            <h2 id="notes-title">log details</h2>
           </div>
-          <p>
-            These supporting images show the level of system work behind the
-            final drone: electrical damage analysis, VOXL camera output,
-            calibration overlays, terminal output, and documentation logs.
-          </p>
         </div>
-        <div class="evidence-grid">
-          <article class="evidence-card">
-            <img src="./assets/modalai/modalai-wire-damage.jpg" alt="Damaged drone wiring close-up" />
-            <p>Wire damage after flight instability, used for repair planning and mentor communication.</p>
+        <div class="notes-grid">
+          <article class="note-card">
+            <p class="eyebrow">May 2024</p>
+            <p>
+              Multiple camera calibration attempts initially failed because the
+              target setup was not flat enough. The final attempt succeeded
+              after improving the calibration setup.
+            </p>
           </article>
-          <article class="evidence-card">
-            <img src="./assets/modalai/modalai-elrs-board.jpg" alt="ELRS board and stripped wires close-up" />
-            <p>Receiver-side board and conductor inspection after crash-related wiring damage.</p>
+          <article class="note-card">
+            <p class="eyebrow">October 2024</p>
+            <p>
+              The drone armed and spun its propellers, but the first lift-off
+              attempts lacked enough thrust. The team then investigated updated
+              software parameters and QGroundControl configuration.
+            </p>
           </article>
-          <article class="evidence-card">
-            <img src="./assets/modalai/modalai-camera-view.png" alt="VOXL camera view in grayscale" />
-            <p>Camera stream view used while bringing up onboard perception hardware.</p>
+          <article class="note-card">
+            <p class="eyebrow">October 2024</p>
+            <p>
+              Increasing max RPM from 15000 to 32000 produced enough lift, but
+              the vehicle rose uncontrollably and crashed. The crash damaged
+              one GPS-side wire, which became the next repair item.
+            </p>
           </article>
-          <article class="evidence-card">
-            <img src="./assets/modalai/modalai-calibration-overlay.jpg" alt="Camera calibration overlay on checkerboard" />
-            <p>Calibration target sampling with tracked feature points across the camera frame.</p>
+          <article class="note-card">
+            <p class="eyebrow">November 2024</p>
+            <p>
+              The camera chip was connected to the VOXL stack and verified
+              through ADB/QGC/VOXL portal work, but the camera output path still
+              required debugging before the stream was usable.
+            </p>
           </article>
-          <article class="evidence-card">
-            <img src="./assets/modalai/modalai-voxl-camera-log.png" alt="Build log for VOXL camera connection" />
-            <p>Build log showing camera connection verification through ADB, QGC, and VOXL portal work.</p>
-          </article>
-          <article class="evidence-card">
-            <img src="./assets/modalai/modalai-documentation-log.png" alt="Build log for BOM and instruction manual documentation" />
-            <p>Documentation/BOM work that turned the build into a repeatable drone kit workflow.</p>
+          <article class="note-card">
+            <p class="eyebrow">November 2024</p>
+            <p>
+              The build instructions and BOM were reorganized into a more
+              repeatable manual so future users could follow the same assembly
+              and setup process.
+            </p>
           </article>
         </div>
       </section>
@@ -308,7 +321,7 @@
       <section class="section contact" aria-labelledby="resources-title">
         <div>
           <p class="eyebrow">Project Documentation</p>
-          <h2 id="resources-title">Manual, presentation, and technical record.</h2>
+          <h2 id="resources-title">Documentation</h2>
         </div>
         <div>
           <p>
