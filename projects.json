@@ -22,7 +22,7 @@
     "github": "",
     "docs": "./modalai-drone.html",
     "docsLabel": "Drone Case Study",
-    "image": "./assets/modalai/modalai-drone-cover.png",
+    "image": "./assets/modalai/modalai-drone-cover.jpg",
     "imageAlt": "ModalAI drone platform with carbon frame, prop guards, battery, and onboard camera",
     "tags": ["VOXL 2 Mini", "QGroundControl", "ADB", "Camera Calibration", "Flight Testing", "Documentation"]
   },

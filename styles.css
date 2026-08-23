@@ -1662,14 +1662,14 @@ h2,
 
 .reference-visual img {
   position: absolute;
-  right: 3.2vw;
+  right: 1.8vw;
   bottom: 0;
-  width: min(47vw, 860px);
-  height: 92vh;
+  width: min(51vw, 920px);
+  height: 94vh;
   object-fit: contain;
   object-position: right bottom;
-  filter: grayscale(1) contrast(1.06) brightness(1.04);
-  opacity: 0.86;
+  filter: none;
+  opacity: 0.94;
 }
 
 .project-links-shell {
@@ -1927,5 +1927,101 @@ h2,
 @media (max-width: 760px) {
   .detail-page .iteration-media {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Compact robotic arm iteration timeline. */
+.arm-detail .iteration-grid {
+  gap: 0;
+}
+
+.arm-detail .iteration-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 18px 0;
+}
+
+.arm-detail .iteration-card:first-child {
+  border-top: 0;
+}
+
+.arm-detail .iteration-card > img {
+  width: 100%;
+  max-height: 180px;
+  margin-bottom: 0;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.arm-detail .iteration-media {
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.arm-detail .iteration-media img {
+  max-height: 170px;
+  object-fit: contain;
+}
+
+.arm-detail .iteration-body {
+  max-width: none;
+}
+
+.arm-detail .iteration-body h2 {
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+}
+
+.arm-detail .iteration-body p,
+.arm-detail .iteration-body li {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.arm-detail .iteration-body ul {
+  margin-top: 10px;
+}
+
+.arm-detail .component-section,
+.arm-detail .technical-strip,
+.arm-detail .supporting-gallery {
+  margin-top: 14px;
+}
+
+.arm-detail .component-grid,
+.arm-detail .supporting-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.arm-detail .component-card,
+.arm-detail .supporting-card,
+.arm-detail .technical-strip div {
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 16px 0;
+}
+
+.arm-detail .component-card > img,
+.arm-detail .supporting-card > img {
+  max-height: 180px;
+  object-fit: contain;
+  object-position: left top;
+}
+
+@media (max-width: 760px) {
+  .arm-detail .iteration-card,
+  .arm-detail .component-grid,
+  .arm-detail .supporting-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .arm-detail .iteration-card > img,
+  .arm-detail .iteration-media img,
+  .arm-detail .component-card > img,
+  .arm-detail .supporting-card > img {
+    max-height: none;
   }
 }
