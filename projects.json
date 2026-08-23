@@ -81,10 +81,10 @@
     "status": "Team Project",
     "description": "Competition robot design, build, and testing through iterative mechanical and electrical development with mechanisms, motors, sensors, and integrated robot systems.",
     "github": "",
-    "docs": "",
-    "docsLabel": "Robot Gallery",
-    "image": "",
-    "imageAlt": "FIRST or FTC competition robot",
+    "docs": "./ftc-robotics.html",
+    "docsLabel": "FTC Build Log",
+    "image": "./assets/ftc/11-physical-field-ready.jpg",
+    "imageAlt": "FTC competition robot with team number 18263, mecanum drivetrain, transfer rollers, and integrated mechanisms",
     "tags": ["Mechanical Design", "Motors", "Sensors", "Robot Integration"]
   }
 ]

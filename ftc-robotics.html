@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="FTC robotics design and build log by Aakarsh Sangar."
+    />
+    <title>FTC Robotics | Aakarsh Sangar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="detail-page ftc-detail">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="./index.html" aria-label="Aakarsh Sangar home">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span>Aakarsh Sangar</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="./projects.html">Projects</a>
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="detail-hero" aria-labelledby="ftc-title">
+        <p class="detail-kicker">FIRST / FTC Robotics</p>
+        <h1 id="ftc-title">FTC Robotics</h1>
+        <p class="detail-copy">
+          Competition robot design, build, and testing through iterative
+          mechanical and electrical development. This page documents the
+          progression from CAD packaging and mechanism studies to physical
+          robot integration, drivetrain testing, and field validation.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="./projects.html">Back to Projects</a>
+        </div>
+      </section>
+
+      <section class="section ftc-awards" aria-labelledby="awards-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Awards & Recognition</p>
+            <h2 id="awards-title">Competition results</h2>
+          </div>
+          <p>
+            Competition robotics work documented from design review through
+            physical integration, mechanism tuning, and field validation.
+          </p>
+        </div>
+        <div class="award-grid">
+          <article class="award-card">
+            <strong>FTC Team Engineering</strong>
+            <span>Designed, built, and tested competition robots through iterative mechanical and electrical development.</span>
+          </article>
+          <article class="award-card">
+            <strong>Multidisciplinary Build Work</strong>
+            <span>Collaborated with teammates across mechanism design, wiring, testing, and robot integration.</span>
+          </article>
+          <article class="award-card">
+            <strong>Mechanisms & Sensors</strong>
+            <span>Developed experience with motors, sensors, drivetrain packaging, intake geometry, and integrated robot systems.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section iteration-grid" aria-label="FTC robot iteration gallery">
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/01-cad-full-system.jpg"
+            alt="FTC robot CAD model with drivetrain, trussed arm, camera, and game element"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 01 / Full-System CAD</p>
+            <h2>Initial robot architecture</h2>
+            <p>
+              The early CAD layout established the overall robot envelope,
+              mecanum drivetrain placement, side plate geometry, camera mount,
+              and an upper scoring mechanism designed around game-piece
+              handling.
+            </p>
+            <ul>
+              <li>Packaged drivetrain, arm, transfer path, and camera into one robot envelope.</li>
+              <li>Used trussed plates to reduce mass while keeping mounting stiffness.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/02-cad-drivetrain-belt.jpg"
+            alt="FTC drivetrain CAD view showing belt routing and mecanum wheel modules"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 02 / Drivetrain Transmission</p>
+            <h2>Belt-driven wheel modules</h2>
+            <p>
+              A dedicated drivetrain study focused on belt routing between
+              motors and mecanum wheels, while keeping shafts, pulleys, standoffs,
+              and side plates aligned inside the robot frame.
+            </p>
+            <ul>
+              <li>Compared belt spacing, pulley placement, and wheel shaft support.</li>
+              <li>Kept the transmission serviceable inside the side rail structure.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/03-cad-drive-module-side.jpg"
+            alt="Side-view FTC drivetrain module CAD with motors, belt routing, pulleys, and mecanum wheels"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 03 / Drive Module Detail</p>
+            <h2>Motor-to-wheel packaging</h2>
+            <p>
+              The side-module CAD made the drivetrain easier to evaluate as a
+              real assembly: motor placement, pulley diameter, belt wrap,
+              bearing support, and wheel clearance could be checked in one
+              focused subsystem view.
+            </p>
+            <ul>
+              <li>Refined the belt path around mecanum wheel shafts and motor output.</li>
+              <li>Kept the module compact enough to fit inside the competition frame.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/04-cad-integrated-revision.jpg"
+            alt="Revised FTC robot CAD model with intake, trussed side plates, and launcher mechanism"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 04 / Integrated Revision</p>
+            <h2>Mechanism packaging update</h2>
+            <p>
+              The robot CAD was revised to integrate the intake/transfer
+              geometry more tightly with the drivetrain, side rails, camera
+              mounting, and upper mechanism structure.
+            </p>
+            <ul>
+              <li>Shifted from isolated subsystems into a more complete robot assembly.</li>
+              <li>Improved mounting access for motors, shafts, bearings, and electronics.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/06-cad-roller-transfer.jpg"
+            alt="FTC CAD close-up of roller transfer and intake geometry"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 05 / Intake Path</p>
+            <h2>Roller transfer geometry</h2>
+            <p>
+              The roller-transfer CAD focused on how the game element would
+              move from intake into the robot. Roller spacing, shaft position,
+              compression, and plate clearance all affected reliability.
+            </p>
+            <ul>
+              <li>Modeled multiple roller stages for controlled game-piece transfer.</li>
+              <li>Checked clearances around side plates, shafts, and the scoring path.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/05-cad-arm-linkage.jpg"
+            alt="FTC CAD model showing side arm linkage and scoring mechanism"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 06 / Arm Linkage</p>
+            <h2>Scoring arm motion study</h2>
+            <p>
+              The side-arm CAD isolated the scoring linkage so pivot locations,
+              plate stiffness, motor mounting, and end-effector reach could be
+              evaluated without the full robot obscuring the mechanism.
+            </p>
+            <ul>
+              <li>Studied the arm's operating envelope and structural support points.</li>
+              <li>Separated linkage behavior from drivetrain and intake packaging decisions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/07-cad-hopper-linkage.jpg"
+            alt="FTC CAD model of a pivoting hopper or flap linkage"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 07 / Game-Piece Control</p>
+            <h2>Pivoting guide and hopper linkage</h2>
+            <p>
+              A smaller mechanism study explored a pivoting guide/hopper element
+              for controlling the game piece inside the robot. The goal was to
+              make the transfer path more predictable without overcomplicating
+              the mechanism.
+            </p>
+            <ul>
+              <li>Studied linkage motion around a compact side-plate package.</li>
+              <li>Balanced actuation simplicity with better control of ball position.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/08-physical-frame-fitup.jpg"
+            alt="Physical FTC robot frame with side plates and mecanum wheels during assembly"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 08 / Physical Fit-Up</p>
+            <h2>CAD-to-hardware transition</h2>
+            <p>
+              The first physical build stage translated the CAD side plates,
+              drivetrain spacing, shafts, and wheel placement into hardware.
+              This exposed real assembly constraints that are harder to see in
+              CAD alone.
+            </p>
+            <ul>
+              <li>Validated side-plate alignment, shaft spacing, and wheel module clearance.</li>
+              <li>Moved from design intent into manufacturable robot structure.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/09-physical-transfer-close.jpg"
+            alt="Close-up of physical FTC transfer rollers, belts, and hardware"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 09 / Transfer Tuning</p>
+            <h2>Roller and belt refinement</h2>
+            <p>
+              Physical testing showed how the roller path behaved under real
+              compression, belt tension, and shaft alignment. The blue pulleys,
+              belts, and compliant rollers formed the transfer system that had
+              to move game pieces consistently.
+            </p>
+            <ul>
+              <li>Tuned belt routing and roller spacing against real hardware tolerances.</li>
+              <li>Used close-up inspection to diagnose slipping, interference, and alignment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/09b-physical-belt-routing.jpg"
+            alt="Close-up of FTC belt routing, pulley stack, and transfer hardware"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 10 / Belt Routing</p>
+            <h2>Transfer hardware close-up</h2>
+            <p>
+              The second transfer close-up shows the real belt path, pulley
+              stack, and roller mounting more directly. This stage was about
+              making the CAD transfer concept survive real belt tension,
+              fastener placement, and repeated game-piece contact.
+            </p>
+            <ul>
+              <li>Checked belt tracking and pulley alignment under physical constraints.</li>
+              <li>Refined the roller stack for more consistent game-piece movement.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/10-physical-full-robot.jpg"
+            alt="Integrated FTC competition robot with wiring, drivetrain, intake, and mechanisms"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 11 / Integrated Robot</p>
+            <h2>Full competition assembly</h2>
+            <p>
+              The full robot brought together the drivetrain, transfer path,
+              camera, electronics, trussed side plates, motor controllers, and
+              wiring. This stage shifted the work from mechanism debugging into
+              system integration.
+            </p>
+            <ul>
+              <li>Integrated mechanical, electrical, and sensor subsystems into one robot.</li>
+              <li>Balanced serviceability with competition-ready packaging.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <img
+            src="./assets/ftc/11-physical-field-ready.jpg"
+            alt="FTC robot on the field with team number and competition mechanisms visible"
+          />
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 12 / Field Configuration</p>
+            <h2>Competition-ready layout</h2>
+            <p>
+              The field-ready robot shows the integrated intake, transfer
+              rollers, side plates, camera placement, launcher/scoring
+              mechanism, and team-number panels in a complete competition
+              configuration.
+            </p>
+            <ul>
+              <li>Validated robot packaging in a realistic field environment.</li>
+              <li>Prepared the mechanism layout for driver practice and competition testing.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <video controls preload="metadata">
+            <source src="./assets/ftc/12-drive-test.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 13 / Drive Test</p>
+            <h2>Motion validation</h2>
+            <p>
+              Drive testing checked whether the drivetrain, software commands,
+              and physical robot response matched the intended field behavior.
+              Testing like this connects CAD geometry and hardware assembly to
+              actual robot motion.
+            </p>
+            <ul>
+              <li>Verified movement under real floor and driver-control conditions.</li>
+              <li>Used test behavior to identify mechanical or control-side tuning needs.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="iteration-card">
+          <video controls preload="metadata">
+            <source src="./assets/ftc/13-field-test.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 14 / Field Test</p>
+            <h2>Robot validation on field layout</h2>
+            <p>
+              Field testing gave the final feedback loop: drivetrain response,
+              mechanism timing, driver control, and field interaction all had
+              to work together under realistic constraints.
+            </p>
+            <ul>
+              <li>Tested robot behavior in a field-like environment.</li>
+              <li>Connected subsystem iteration to match-ready operation.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Aakarsh Sangar</span>
+      <span>Robotics - Mechanical Design - AI</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
