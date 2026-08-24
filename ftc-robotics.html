@@ -34,13 +34,92 @@
         <p class="detail-kicker">FIRST / FTC Robotics</p>
         <h1 id="ftc-title">FTC Robotics</h1>
         <p class="detail-copy">
-          Competition robot design, build, and testing through iterative
-          mechanical and electrical development. This page documents the
-          progression from CAD packaging and mechanism studies to physical
-          robot integration, drivetrain testing, and field validation.
+          Competition robot design, build, and testing with Team #18263 High
+          Voltage. This section focuses on my engineering contributions:
+          CADing most of the custom robot architecture, making packaging and
+          mechanism decisions during the build, and contributing to the control
+          code that connected sensing, shooter behavior, and field operation.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="./projects.html">Back to Projects</a>
+        </div>
+      </section>
+
+      <section class="section ftc-contributions" aria-label="My FTC contributions">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">My Contributions</p>
+          </div>
+          <p>
+            My work centered on subsystem CAD, mechanical packaging, build
+            decisions, and selected software/control logic across the robot's
+            intake, transfer, turret, shooter, sensing, and field behavior.
+          </p>
+        </div>
+
+        <div class="contribution-grid">
+          <article class="contribution-card">
+            <strong>Mechanical CAD</strong>
+            <span>
+              I modeled most of the robot's custom mechanical architecture in CAD,
+              including intake geometry, transfer routing, turret packaging,
+              shooter placement, side plates, and subsystem integration.
+            </span>
+          </article>
+          <article class="contribution-card">
+            <strong>Build Decisions</strong>
+            <span>
+              I used the CAD model to resolve packaging constraints, ball-path
+              alignment, serviceability, and mechanism iteration before and
+              during fabrication.
+            </span>
+          </article>
+          <article class="contribution-card">
+            <strong>Controls Work</strong>
+            <span>
+              I contributed to coding and tuning work around sensor-triggered
+              behavior, shooter control, autonomous pathing decisions, and
+              robot-state logic used during testing.
+            </span>
+          </article>
+        </div>
+
+        <div class="cad-gallery" aria-label="Final FTC CAD views">
+          <figure>
+            <img
+              src="./assets/ftc/final-cad-full-assembly.jpg"
+              alt="Final FTC robot CAD assembly showing intake, transfer, turret, shooter, and drivetrain packaging"
+            />
+            <figcaption>Final assembly CAD with intake, transfer, turret, and shooter packaged together.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/ftc/final-cad-turret-packaging.jpg"
+              alt="Close-up CAD view of turret, shooter, Limelight, gears, and packaging"
+            />
+            <figcaption>Turret and shooter packaging, including Limelight placement and gear-driven rotation.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/ftc/final-cad-roller-transfer-top.jpg"
+              alt="Top-down CAD view of roller transfer and ball path"
+            />
+            <figcaption>Roller transfer path used to move game pieces from intake toward shooter.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/ftc/final-cad-intake-transfer-front.jpg"
+              alt="Front CAD view of intake wedges, roller path, and transfer mechanism"
+            />
+            <figcaption>Front intake and transfer packaging showing guide geometry and roller spacing.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/ftc/final-cad-side-plate.jpg"
+              alt="Side CAD view of custom lightened robot plate and turret base"
+            />
+            <figcaption>Custom side plate geometry used to balance stiffness, mounting access, and weight.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -48,25 +127,34 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Awards & Recognition</p>
-            <h2 id="awards-title">Competition results</h2>
+            <h2 id="awards-title">Team awards</h2>
           </div>
           <p>
-            Competition robotics work documented from design review through
-            physical integration, mechanism tuning, and field validation.
+            High Voltage has built on several seasons of competition
+            experience, carrying forward engineering documentation, outreach,
+            robot design, and mentorship across the team.
           </p>
         </div>
         <div class="award-grid">
           <article class="award-card">
-            <strong>FTC Team Engineering</strong>
-            <span>Designed, built, and tested competition robots through iterative mechanical and electrical development.</span>
+            <strong>Judges Award</strong>
+            <span>2020-2021 season recognition.</span>
           </article>
           <article class="award-card">
-            <strong>Multidisciplinary Build Work</strong>
-            <span>Collaborated with teammates across mechanism design, wiring, testing, and robot integration.</span>
+            <strong>Innovate Award</strong>
+            <span>2021-2022 season recognition.</span>
           </article>
           <article class="award-card">
-            <strong>Mechanisms & Sensors</strong>
-            <span>Developed experience with motors, sensors, drivetrain packaging, intake geometry, and integrated robot systems.</span>
+            <strong>Design Award</strong>
+            <span>2022-2023 season recognition.</span>
+          </article>
+          <article class="award-card">
+            <strong>Motivate Award</strong>
+            <span>2024-2025 season recognition.</span>
+          </article>
+          <article class="award-card">
+            <strong>Inspire 3rd</strong>
+            <span>2025-2026 season recognition.</span>
           </article>
         </div>
       </section>
@@ -74,285 +162,184 @@
       <section class="section iteration-grid" aria-label="FTC robot iteration gallery">
         <article class="iteration-card">
           <img
-            src="./assets/ftc/01-cad-full-system.jpg"
-            alt="FTC robot CAD model with drivetrain, trussed arm, camera, and game element"
+            class="portfolio-extract-image"
+            src="./assets/ftc/portfolio-extract-01-design-cycle.jpg"
+            alt="Extracted FTC portfolio figure showing the intake engineering design cycle and captions"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 01 / Full-System CAD</p>
-            <h2>Initial robot architecture</h2>
+            <p class="eyebrow">Phase 01 / Strategy & Design Process</p>
+            <h2>Driver-centered architecture</h2>
             <p>
-              The early CAD layout established the overall robot envelope,
-              mecanum drivetrain placement, side plate geometry, camera mount,
-              and an upper scoring mechanism designed around game-piece
-              handling.
+              The season began with a strategic decision to make the robot fast,
+              consistent, and easy to control under defense. The design process
+              centered on automated aiming, reliable autonomous scoring, and a
+              mechanism layout that could cycle quickly without depending on
+              perfect driver alignment.
             </p>
             <ul>
-              <li>Packaged drivetrain, arm, transfer path, and camera into one robot envelope.</li>
-              <li>Used trussed plates to reduce mass while keeping mounting stiffness.</li>
+              <li>Started with a dual-wheel horizontal intake concept, then pivoted after CAD showed compression issues and dead zones.</li>
+              <li>Used CAD, prototype testing, stress checks, and risk mitigation features like the stopper and hood to catch problems before competition.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/ftc/02-cad-drivetrain-belt.jpg"
-            alt="FTC drivetrain CAD view showing belt routing and mecanum wheel modules"
+            class="portfolio-extract-image"
+            src="./assets/ftc/portfolio-extract-02-evolutions.jpg"
+            alt="Extracted FTC portfolio figures comparing S.P.A.R.K V1, V2, turret design, and molded wheel iterations"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 02 / Drivetrain Transmission</p>
-            <h2>Belt-driven wheel modules</h2>
+            <p class="eyebrow">Phase 02 / S.P.A.R.K Evolutions</p>
+            <h2>From V1 reliability to V2 automation</h2>
             <p>
-              A dedicated drivetrain study focused on belt routing between
-              motors and mecanum wheels, while keeping shafts, pulleys, standoffs,
-              and side plates aligned inside the robot frame.
+              V1 proved the team could score consistently, but it exposed slow
+              transfer between the intake and shooter. V2 added custom molded
+              silicone wheels, wedges, an inertial flywheel, retractable hood,
+              active transfer, and a turret that tracks the target to reduce
+              driver error.
             </p>
             <ul>
-              <li>Compared belt spacing, pulley placement, and wheel shaft support.</li>
-              <li>Kept the transmission serviceable inside the side rail structure.</li>
+              <li>Used dual geared Axon servos for the turret instead of dedicating a planetary motor.</li>
+              <li>Reached roughly 0.5 N-m of turret torque with a 1.1 second 360-degree rotation target.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/ftc/03-cad-drive-module-side.jpg"
-            alt="Side-view FTC drivetrain module CAD with motors, belt routing, pulleys, and mecanum wheels"
+            class="portfolio-extract-image"
+            src="./assets/ftc/portfolio-extract-03-transfer-intake-stopper.jpg"
+            alt="Extracted FTC portfolio figures summarizing transfer, intake ramp, and stopper iterations"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 03 / Drive Module Detail</p>
-            <h2>Motor-to-wheel packaging</h2>
+            <p class="eyebrow">Phase 03 / Mechanism Iteration</p>
+            <h2>Transfer, intake, and stopper refinement</h2>
             <p>
-              The side-module CAD made the drivetrain easier to evaluate as a
-              real assembly: motor placement, pulley diameter, belt wrap,
-              bearing support, and wheel clearance could be checked in one
-              focused subsystem view.
+              The portfolio groups the most important iteration loop: transfer,
+              intake ramp, and stopper design. The transfer moved from a simple
+              upward curved ramp to a kicker, then to a stopper, and finally to
+              embedded custom silicone wheels inside the transfer ramp. My work
+              focused on translating these mechanism decisions into CAD and
+              buildable packaging.
             </p>
             <ul>
-              <li>Refined the belt path around mecanum wheel shafts and motor output.</li>
-              <li>Kept the module compact enough to fit inside the competition frame.</li>
+              <li>Reduced unload time from about 5 seconds to 0.43 seconds while improving reliability.</li>
+              <li>Changed the intake ramp from a jamming straight ramp to a wedge-guided system able to intake three balls in under 1.5 seconds.</li>
+              <li>Replaced a weak overhead stopper with a rotating stopper that handled stronger tangential forces in a tight package.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/ftc/04-cad-integrated-revision.jpg"
-            alt="Revised FTC robot CAD model with intake, trussed side plates, and launcher mechanism"
+            class="portfolio-extract-image"
+            src="./assets/ftc/portfolio-extract-04-retractable-hood.jpg"
+            alt="Extracted FTC portfolio figures explaining the dual-servo retractable hood and fixed launch angles"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 04 / Integrated Revision</p>
-            <h2>Mechanism packaging update</h2>
+            <p class="eyebrow">Phase 04 / Retractable Hood</p>
+            <h2>Fast fixed-angle shot control</h2>
             <p>
-              The robot CAD was revised to integrate the intake/transfer
-              geometry more tightly with the drivetrain, side rails, camera
-              mounting, and upper mechanism structure.
+              The retractable hood gave the shooter two repeatable launch
+              angles instead of relying on a continuously adjustable mechanism
+              that could slip. The hood was directly driven by dual torque
+              servos and swapped between fixed geometric states.
             </p>
             <ul>
-              <li>Shifted from isolated subsystems into a more complete robot assembly.</li>
-              <li>Improved mounting access for motors, shafts, bearings, and electronics.</li>
+              <li>Used a 1.8 inch, 45 degree hood state and a 3.5 inch, 30 degree hood state.</li>
+              <li>Traded full-range movement for exact angles, faster adjustment, and more consistent shooting.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/ftc/06-cad-roller-transfer.jpg"
-            alt="FTC CAD close-up of roller transfer and intake geometry"
+            class="portfolio-extract-image"
+            src="./assets/ftc/portfolio-extract-05-subsystem-design.jpg"
+            alt="Extracted FTC portfolio figures showing shooter, turret, transfer ramp, intake, and flywheel subsystem design"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 05 / Intake Path</p>
-            <h2>Roller transfer geometry</h2>
+            <p class="eyebrow">Phase 05 / Subsystem Design</p>
+            <h2>Parallel plates and active transfer</h2>
             <p>
-              The roller-transfer CAD focused on how the game element would
-              move from intake into the robot. Roller spacing, shaft position,
-              compression, and plate clearance all affected reliability.
+              I modeled most of the custom subsystem geometry in CAD and used a
+              parallel-plate robot architecture so the drivetrain, shooter,
+              turret, transfer ramp, intake, Limelight, stopper, and
+              electronics could be integrated into one cohesive structure
+              before manufacturing.
             </p>
             <ul>
-              <li>Modeled multiple roller stages for controlled game-piece transfer.</li>
-              <li>Checked clearances around side plates, shafts, and the scoring path.</li>
+              <li>Modeled custom plates, intake guides, transfer geometry, turret packaging, and shooter integration around real hardware constraints.</li>
+              <li>Mounted the shooter on a turret driven through a servo gear mechanism and Lazy Susan bearing.</li>
+              <li>Embedded wheels into the transfer ramp to turn a passive ramp into an active transfer system.</li>
+              <li>Improved transfer unload from 3.5 seconds to 0.43 seconds and intake time from 4 seconds to 0.5 seconds.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/ftc/05-cad-arm-linkage.jpg"
-            alt="FTC CAD model showing side arm linkage and scoring mechanism"
+            class="portfolio-extract-image"
+            src="./assets/ftc/portfolio-extract-06-self-awareness.jpg"
+            alt="Extracted FTC portfolio figures describing distance sensors, odometry, PID control, path planning, and turret auto-aim"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 06 / Arm Linkage</p>
-            <h2>Scoring arm motion study</h2>
+            <p class="eyebrow">Phase 06 / Control Self-Awareness</p>
+            <h2>Sensors, odometry, and auto-aim</h2>
             <p>
-              The side-arm CAD isolated the scoring linkage so pivot locations,
-              plate stiffness, motor mounting, and end-effector reach could be
-              evaluated without the full robot obscuring the mechanism.
+              I contributed to the coding and tuning work that helped the robot
+              respond to its own state. Distance sensors detected when balls
+              entered the intake and whether balls were still inside the
+              shooter, while odometry and turret feedback improved autonomous
+              and tele-op consistency.
             </p>
             <ul>
-              <li>Studied the arm's operating envelope and structural support points.</li>
-              <li>Separated linkage behavior from drivetrain and intake packaging decisions.</li>
+              <li>Used Pinpoint odometry with two dead wheels, ending matches over 15 inches more accurate than a three-wheel setup.</li>
+              <li>Ran drivetrain and shooter motors with PID control, holding shooter speed above 3000 RPM with less than 2% error.</li>
+              <li>Worked on sensor-triggered behavior and turret feedback so drivers had less manual timing and aiming burden.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <img
-            src="./assets/ftc/07-cad-hopper-linkage.jpg"
-            alt="FTC CAD model of a pivoting hopper or flap linkage"
+            class="portfolio-extract-image"
+            src="./assets/ftc/portfolio-extract-07-external-awareness.jpg"
+            alt="Extracted FTC portfolio figures describing Limelight relocalization, regression shooting, motor caching, and state machine logic"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 07 / Game-Piece Control</p>
-            <h2>Pivoting guide and hopper linkage</h2>
+            <p class="eyebrow">Phase 07 / External Awareness</p>
+            <h2>Vision relocalization and software architecture</h2>
             <p>
-              A smaller mechanism study explored a pivoting guide/hopper element
-              for controlling the game piece inside the robot. The goal was to
-              make the transfer path more predictable without overcomplicating
-              the mechanism.
+              To correct odometry drift and shoot from different launch-zone
+              positions, I contributed to the control-side work around
+              Limelight AprilTag relocalization, shooter modeling, and
+              state-based robot behavior. The software also used motor caching
+              and a simplified state machine to make actuation faster and more
+              reliable.
             </p>
             <ul>
-              <li>Studied linkage motion around a compact side-plate package.</li>
-              <li>Balanced actuation simplicity with better control of ball position.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <img
-            src="./assets/ftc/08-physical-frame-fitup.jpg"
-            alt="Physical FTC robot frame with side plates and mecanum wheels during assembly"
-          />
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 08 / Physical Fit-Up</p>
-            <h2>CAD-to-hardware transition</h2>
-            <p>
-              The first physical build stage translated the CAD side plates,
-              drivetrain spacing, shafts, and wheel placement into hardware.
-              This exposed real assembly constraints that are harder to see in
-              CAD alone.
-            </p>
-            <ul>
-              <li>Validated side-plate alignment, shaft spacing, and wheel module clearance.</li>
-              <li>Moved from design intent into manufacturable robot structure.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <img
-            src="./assets/ftc/09-physical-transfer-close.jpg"
-            alt="Close-up of physical FTC transfer rollers, belts, and hardware"
-          />
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 09 / Transfer Tuning</p>
-            <h2>Roller and belt refinement</h2>
-            <p>
-              Physical testing showed how the roller path behaved under real
-              compression, belt tension, and shaft alignment. The blue pulleys,
-              belts, and compliant rollers formed the transfer system that had
-              to move game pieces consistently.
-            </p>
-            <ul>
-              <li>Tuned belt routing and roller spacing against real hardware tolerances.</li>
-              <li>Used close-up inspection to diagnose slipping, interference, and alignment.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <img
-            src="./assets/ftc/09b-physical-belt-routing.jpg"
-            alt="Close-up of FTC belt routing, pulley stack, and transfer hardware"
-          />
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 10 / Belt Routing</p>
-            <h2>Transfer hardware close-up</h2>
-            <p>
-              The second transfer close-up shows the real belt path, pulley
-              stack, and roller mounting more directly. This stage was about
-              making the CAD transfer concept survive real belt tension,
-              fastener placement, and repeated game-piece contact.
-            </p>
-            <ul>
-              <li>Checked belt tracking and pulley alignment under physical constraints.</li>
-              <li>Refined the roller stack for more consistent game-piece movement.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <img
-            src="./assets/ftc/10-physical-full-robot.jpg"
-            alt="Integrated FTC competition robot with wiring, drivetrain, intake, and mechanisms"
-          />
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 11 / Integrated Robot</p>
-            <h2>Full competition assembly</h2>
-            <p>
-              The full robot brought together the drivetrain, transfer path,
-              camera, electronics, trussed side plates, motor controllers, and
-              wiring. This stage shifted the work from mechanism debugging into
-              system integration.
-            </p>
-            <ul>
-              <li>Integrated mechanical, electrical, and sensor subsystems into one robot.</li>
-              <li>Balanced serviceability with competition-ready packaging.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <img
-            src="./assets/ftc/11-physical-field-ready.jpg"
-            alt="FTC robot on the field with team number and competition mechanisms visible"
-          />
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 12 / Field Configuration</p>
-            <h2>Competition-ready layout</h2>
-            <p>
-              The field-ready robot shows the integrated intake, transfer
-              rollers, side plates, camera placement, launcher/scoring
-              mechanism, and team-number panels in a complete competition
-              configuration.
-            </p>
-            <ul>
-              <li>Validated robot packaging in a realistic field environment.</li>
-              <li>Prepared the mechanism layout for driver practice and competition testing.</li>
+              <li>Used AprilTag pose math to relocalize the robot from the goal target.</li>
+              <li>Built a 20-point distance sample to model shooter RPM as <code>1768.96491 + 7.3377 * distance</code>.</li>
+              <li>Reduced loop time from roughly 60 ms to 15 ms by writing actuator power once per loop.</li>
             </ul>
           </div>
         </article>
 
         <article class="iteration-card">
           <video controls preload="metadata">
-            <source src="./assets/ftc/12-drive-test.mp4" type="video/mp4" />
+            <source src="./assets/ftc/13-field-test-15s.mp4" type="video/mp4" />
             Your browser does not support embedded video.
           </video>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 13 / Drive Test</p>
-            <h2>Motion validation</h2>
-            <p>
-              Drive testing checked whether the drivetrain, software commands,
-              and physical robot response matched the intended field behavior.
-              Testing like this connects CAD geometry and hardware assembly to
-              actual robot motion.
-            </p>
-            <ul>
-              <li>Verified movement under real floor and driver-control conditions.</li>
-              <li>Used test behavior to identify mechanical or control-side tuning needs.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="iteration-card">
-          <video controls preload="metadata">
-            <source src="./assets/ftc/13-field-test.mp4" type="video/mp4" />
-            Your browser does not support embedded video.
-          </video>
-          <div class="iteration-body">
-            <p class="eyebrow">Phase 14 / Field Test</p>
+            <p class="eyebrow">Phase 08 / Field Test</p>
             <h2>Robot validation on field layout</h2>
             <p>
-              Field testing gave the final feedback loop: drivetrain response,
-              mechanism timing, driver control, and field interaction all had
-              to work together under realistic constraints.
+              Field testing gave the final feedback loop for subsystem timing,
+              driver control, scoring reliability, and field interaction. It
+              tied together intake, transfer, shooter, sensing, and software
+              architecture under realistic constraints.
             </p>
             <ul>
               <li>Tested robot behavior in a field-like environment.</li>
