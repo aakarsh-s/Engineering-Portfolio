@@ -1553,7 +1553,7 @@ h2,
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  padding: 12.2vh 0 4vh 12.7vw;
+  padding: 7vh 0 3.4vh 12.7vw;
 }
 
 .identity-block h1 {
@@ -1578,7 +1578,7 @@ h2,
   display: grid;
   gap: 0;
   width: max-content;
-  margin-top: 12.3vh;
+  margin-top: 9vh;
   padding-left: 0.9vw;
 }
 
@@ -1611,7 +1611,7 @@ h2,
 
 .reference-bio {
   max-width: min(36vw, 680px);
-  margin: 11.3vh 0 0;
+  margin: 8.2vh 0 0;
   color: #202020;
   font-size: clamp(0.95rem, 1vw, 1.25rem);
   font-weight: 700;
@@ -1665,11 +1665,11 @@ h2,
 .reference-visual img {
   position: absolute;
   right: 1.8vw;
-  bottom: 0;
-  width: min(51vw, 920px);
-  height: 94vh;
+  top: 1.8vh;
+  width: min(53vw, 960px);
+  height: 95vh;
   object-fit: contain;
-  object-position: right bottom;
+  object-position: right top;
   filter: none;
   opacity: 0.94;
 }
