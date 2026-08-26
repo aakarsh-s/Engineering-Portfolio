@@ -236,6 +236,32 @@
           </div>
         </article>
 
+        <article class="iteration-card electronics-iteration">
+          <div class="electronics-panel">
+            <strong>24 V power</strong>
+            <span>DM542 drivers</span>
+            <span>TMC2209 drivers</span>
+            <span>step/dir control</span>
+          </div>
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 10 / Electronics Architecture</p>
+            <h2>Power and stepper driver selection</h2>
+            <p>
+              The electronics were organized around a 24 V supply for the
+              stepper power stage, giving the motors more voltage headroom for
+              faster current response than a lower-voltage bench setup. I used
+              external DM542 drivers for higher-current stepper axes and
+              TMC2209 drivers where compact, lower-current, quieter
+              microstepping control made more sense.
+            </p>
+            <ul>
+              <li>Used DM542 drivers for axes that needed more current capacity, thermal margin, and robust step/direction control.</li>
+              <li>Used TMC2209 drivers for compact embedded stepper control where quiet microstepping and simpler board-level integration were useful.</li>
+              <li>Kept the electronics modular so motor drivers, wiring, and control code could be debugged separately from the mechanical arm.</li>
+            </ul>
+          </div>
+        </article>
+
         <article class="iteration-card engineering-highlight">
           <div class="iteration-media split-media">
             <img
@@ -248,7 +274,7 @@
             />
           </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 10 / Custom Actuator</p>
+            <p class="eyebrow">Phase 11 / Custom Actuator</p>
             <h2>Planetary shoulder drive for compact torque multiplication</h2>
             <p>
               After the belt-driven prototype showed that packaging prevented
@@ -272,7 +298,7 @@
             alt="Final CAD assembly of the robotic arm with planetary shoulder module"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 11 / Final CAD Direction</p>
+            <p class="eyebrow">Phase 12 / Final CAD Direction</p>
             <h2>Integrated CAD with planetary shoulder module</h2>
             <p>
               The final CAD revision brought together the trussed links, geared
@@ -293,7 +319,7 @@
             alt="Current physical prototype of Aakarsh Sangar's robotic arm with gripper and wiring"
           />
           <div class="iteration-body">
-            <p class="eyebrow">Phase 12 / Current Hardware State</p>
+            <p class="eyebrow">Phase 13 / Current Hardware State</p>
             <h2>Full prototype with gripper and routed actuation</h2>
             <p>
               The latest build combines the yaw base, shoulder structure,
@@ -464,8 +490,9 @@
             />
             <div>
               <strong>Driver Bring-Up</strong>
-              Driver pinout mapping, thermal preparation, and wiring checks for
-              reliable actuator testing.
+              Driver pinout mapping and wiring checks for a 24 V stepper power
+              stage using DM542 drivers for higher-current axes and TMC2209
+              drivers for compact, quieter microstepping control.
             </div>
           </article>
         </div>

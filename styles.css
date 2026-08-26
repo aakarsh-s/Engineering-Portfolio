@@ -1969,6 +1969,32 @@ h2,
   object-fit: contain;
 }
 
+.arm-detail .electronics-panel {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  min-height: 160px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.arm-detail .electronics-panel strong,
+.arm-detail .electronics-panel span {
+  display: block;
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.15;
+}
+
+.arm-detail .electronics-panel strong {
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+}
+
+.arm-detail .electronics-panel span {
+  font-size: 0.9rem;
+}
+
 .arm-detail .iteration-body {
   max-width: none;
 }
