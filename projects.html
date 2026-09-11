@@ -19,24 +19,64 @@
         </div>
 
         <p class="reference-bio">
-          My work begins with mechanical design and physical integration. The
-          software projects below are smaller experiments that support my
-          broader interest in sensing and intelligent robotic systems.
+          My hardware work begins in CAD and develops through fabrication,
+          integration, testing, and revision. Each summary below presents the
+          system and my contribution; the single link opens its complete
+          iterative process.
         </p>
 
-        <section class="reference-list" aria-labelledby="robotics-projects-title">
-          <p id="robotics-projects-title">robotics and mechanical systems</p>
-          <a href="./arm-iterations.html">custom robotic arm — view engineering decisions</a>
-          <span>Personal project spanning CAD, printed structures, drivetrain iteration, an 8:1 planetary shoulder actuator, and 24 V stepper electronics.</span>
-          <a href="./ftc-robotics.html">ftc robotics — view my contributions</a>
-          <span>Team project in which I focused on subsystem CAD, mechanical packaging, build decisions, and selected controls work.</span>
+        <section class="hardware-projects" aria-labelledby="robotics-projects-title">
+          <h2 class="project-group-title" id="robotics-projects-title">robotics and mechanical systems</h2>
+
+          <article class="hardware-project">
+            <div class="hardware-project-copy">
+              <p class="hardware-project-meta">personal project / 2025-present</p>
+              <h2>Custom Robotic Arm</h2>
+              <p>
+                A self-directed platform for learning mechanism design,
+                actuation, electronics, and control through a system I could
+                manufacture and test myself.
+              </p>
+              <ul>
+                <li>Designed the arm architecture, trussed links, yaw base, gripper, and drivetrain packaging in CAD.</li>
+                <li>Printed and assembled the physical mechanism, then integrated a 24 V stepper power stage.</li>
+                <li>Developed an 8:1 planetary shoulder actuator after the original belt reduction reached its packaging limit.</li>
+              </ul>
+              <a class="iteration-link" href="./arm-iterations.html">view iterative process</a>
+            </div>
+            <figure class="hardware-project-media">
+              <img src="./assets/arm-iterations/17-real-current-prototype.png" alt="Integrated physical prototype of Aakarsh Sangar's robotic arm" />
+              <figcaption>Current physical prototype during electronics integration.</figcaption>
+            </figure>
+          </article>
+
+          <article class="hardware-project">
+            <div class="hardware-project-copy">
+              <p class="hardware-project-meta">cad lead and build team / 2020-2026</p>
+              <h2>FTC Robotics</h2>
+              <p>
+                Competition robotics with Team 18263 High Voltage, centered on
+                turning subsystem requirements into a serviceable, integrated robot.
+              </p>
+              <ul>
+                <li>Modeled most of the custom robot architecture and subsystem interfaces in Onshape.</li>
+                <li>Used the assembly to resolve intake, transfer, turret, shooter, sensing, and frame packaging.</li>
+                <li>Contributed during fabrication and to selected AprilTag, turret-aiming, and PID control work.</li>
+              </ul>
+              <a class="iteration-link" href="./ftc-robotics.html">view iterative process</a>
+            </div>
+            <figure class="hardware-project-media contain-media">
+              <img src="./assets/ftc/final-cad-full-assembly.jpg" alt="Final CAD assembly of FTC Team 18263's competition robot" />
+              <figcaption>Full-system CAD used to coordinate subsystem packaging.</figcaption>
+            </figure>
+          </article>
         </section>
 
-        <section class="reference-list" aria-labelledby="software-projects-title">
+        <section class="reference-list software-project-list" aria-labelledby="software-projects-title">
           <p id="software-projects-title">software experiments</p>
-          <a href="./faultline.html">faultline — view project links</a>
+          <a href="./faultline.html">faultline</a>
           <span>Hackathon prototype that organized literature search, evidence comparison, and experiment suggestions into a visible workflow.</span>
-          <a href="./rppg-pipeline.html">rppg pipeline — view project links</a>
+          <a href="./rppg-pipeline.html">rppg pipeline</a>
           <span>Computer-vision experiment for testing camera-based physiological-signal estimation on a Jetson Orin Nano.</span>
         </section>
 

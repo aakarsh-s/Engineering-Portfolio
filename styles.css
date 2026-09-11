@@ -1932,6 +1932,163 @@ h2,
   }
 }
 
+/* Document-style hardware project index inspired by traditional engineering portfolios. */
+.home-hardware-list span {
+  color: #303030;
+  font-size: clamp(0.84rem, 0.88vw, 0.96rem);
+  font-weight: 400;
+}
+
+.home-hardware-list strong {
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.project-links-page .project-links-panel {
+  width: min(1080px, 100%);
+}
+
+.hardware-projects {
+  margin-top: 42px;
+}
+
+.project-group-title {
+  margin: 0;
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hardware-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+  gap: clamp(34px, 5vw, 74px);
+  align-items: start;
+  margin-top: 18px;
+  padding: 34px 0 42px;
+  border-top: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.hardware-project + .hardware-project {
+  margin-top: 0;
+}
+
+.hardware-project-copy {
+  min-width: 0;
+}
+
+.hardware-project-meta {
+  margin: 0 0 10px;
+  color: #555;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hardware-project h2,
+.internship-feature h2 {
+  margin: 0 0 15px;
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  line-height: 1.08;
+}
+
+.hardware-project-copy > p:not(.hardware-project-meta),
+.hardware-project-copy li {
+  color: #292929;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.hardware-project-copy > p:not(.hardware-project-meta) {
+  margin: 0 0 14px;
+}
+
+.hardware-project-copy ul {
+  margin: 0 0 18px;
+  padding-left: 1.15rem;
+}
+
+.hardware-project-copy li + li {
+  margin-top: 6px;
+}
+
+.iteration-link {
+  display: inline-block;
+  color: #0000ee;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.hardware-project-media {
+  margin: 0;
+}
+
+.hardware-project-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  background: #fff;
+}
+
+.hardware-project-media.contain-media img {
+  object-fit: contain;
+}
+
+.hardware-project-media figcaption {
+  margin-top: 8px;
+  color: #666;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.software-project-list {
+  max-width: 760px;
+  margin-top: 12px;
+}
+
+.software-project-list a {
+  width: fit-content;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.internship-feature.hardware-project {
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+  margin-top: 42px;
+  padding-top: 34px;
+  border-top: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.internship-feature.hardware-project img {
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 760px) {
+  .hardware-project,
+  .internship-feature.hardware-project {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 0 34px;
+  }
+
+  .hardware-project-media {
+    max-width: 560px;
+  }
+}
+
 /* Evidence-first portfolio pass: concise skim layer with compact technical logs. */
 
 :root {
@@ -3204,7 +3361,160 @@ h2,
     gap: 6px;
   }
 
-  .build-log-disclosure > summary small {
+.build-log-disclosure > summary small {
     text-align: left;
+  }
+}
+
+/* Final project-index layout. Keep hardware informational and link only to its iteration page. */
+.home-hardware-list span {
+  color: #303030;
+  font-size: clamp(0.84rem, 0.88vw, 0.96rem);
+  font-weight: 400;
+}
+
+.home-hardware-list strong {
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.project-links-page .project-links-panel {
+  width: min(1080px, 100%);
+}
+
+.hardware-projects {
+  margin-top: 42px;
+}
+
+.project-group-title {
+  margin: 0;
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hardware-project,
+.internship-feature.hardware-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+  gap: clamp(34px, 5vw, 74px);
+  align-items: start;
+  margin-top: 18px;
+  padding: 34px 0 42px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.internship-feature.hardware-project {
+  margin-top: 42px;
+}
+
+.hardware-project + .hardware-project {
+  margin-top: 0;
+}
+
+.hardware-project-copy {
+  min-width: 0;
+}
+
+.hardware-project-meta {
+  margin: 0 0 10px;
+  color: #555;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hardware-project h2,
+.internship-feature.hardware-project h2 {
+  margin: 0 0 15px;
+  color: #111;
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  line-height: 1.08;
+}
+
+.hardware-project-copy > p:not(.hardware-project-meta),
+.hardware-project-copy li,
+.internship-feature.hardware-project p {
+  color: #292929;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.hardware-project-copy > p:not(.hardware-project-meta) {
+  margin: 0 0 14px;
+}
+
+.hardware-project-copy ul {
+  margin: 0 0 18px;
+  padding-left: 1.15rem;
+}
+
+.hardware-project-copy li + li {
+  margin-top: 6px;
+}
+
+.iteration-link {
+  display: inline-block;
+  color: #0000ee;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.hardware-project-media {
+  margin: 0;
+}
+
+.hardware-project-media img,
+.internship-feature.hardware-project .hardware-project-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  background: #fff;
+}
+
+.hardware-project-media.contain-media img {
+  object-fit: contain;
+}
+
+.hardware-project-media figcaption {
+  margin-top: 8px;
+  color: #666;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.software-project-list {
+  max-width: 760px;
+  margin-top: 12px;
+}
+
+.software-project-list a {
+  width: fit-content;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .hardware-project,
+  .internship-feature.hardware-project {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 0 34px;
+  }
+
+  .hardware-project-media {
+    max-width: 560px;
   }
 }
