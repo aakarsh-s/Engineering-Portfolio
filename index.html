@@ -10,65 +10,51 @@
     <title>Aakarsh Sangar</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="reference-home">
-    <main class="reference-shell" id="top">
-      <section class="reference-panel" aria-labelledby="home-title">
-        <div class="identity-block">
-          <h1 id="home-title">Aakarsh Sangar</h1>
-          <p>Engineering Student</p>
-          <p>San Diego, CA / Purdue University</p>
+  <body class="classic-portfolio classic-home">
+    <header class="classic-header" aria-label="Primary navigation">
+      <a class="classic-brand" href="./index.html">Aakarsh Sangar</a>
+      <nav>
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./projects.html">Projects</a>
+      </nav>
+    </header>
+
+    <main class="classic-main">
+      <h1>Aakarsh Sangar</h1>
+      <section class="classic-about" aria-labelledby="about-title">
+        <figure class="classic-about-media">
+          <img
+            src="./assets/robotic-arm-sketch.jpg"
+            alt="Sketch rendering of Aakarsh Sangar's custom robotic arm"
+          />
+        </figure>
+
+        <div class="classic-about-copy">
+          <p class="classic-kicker">Engineering Student · Purdue University</p>
+          <h2 id="about-title">About Me</h2>
+          <p>
+            I design and build robotic mechanisms, then use electronics and
+            control software to make them move. My current platform is a custom
+            robotic arm developed through CAD, additive manufacturing,
+            drivetrain iteration, 24 V stepper electronics, and a purpose-built
+            8:1 planetary shoulder actuator.
+          </p>
+          <p>
+            I am currently learning dynamics, kinematics, controls, ROS 2, and
+            C++ to implement reliable motion on the arm. My next milestones are
+            joint calibration, repeatable trajectories, and camera-based block
+            detection before I explore language-conditioned manipulation.
+          </p>
+          <p>
+            Across personal projects, competition robotics, and an internship,
+            I have learned to move between CAD, fabrication, wiring, software
+            bring-up, testing, and revision. The Projects page documents that
+            work and the decisions behind each iteration.
+          </p>
         </div>
-
-        <nav class="reference-nav" aria-label="Portfolio links">
-          <a href="#about">about</a>
-          <a href="#featured-work">featured work</a>
-          <a href="./projects.html">projects</a>
-          <a href="./internships.html">internships</a>
-          <a href="#direction">current direction</a>
-        </nav>
-
-        <p class="reference-bio" id="about">
-          I design and build robotic mechanisms, then use electronics and
-          control software to make them move. My current platform is a custom
-          robotic arm developed through CAD, additive manufacturing, drivetrain
-          iteration, 24 V stepper electronics, and a purpose-built 8:1
-          planetary shoulder actuator.
-        </p>
-
-        <section class="reference-list home-hardware-list" id="featured-work" aria-label="Featured hardware work">
-          <p>featured hardware</p>
-          <span><strong>custom robotic arm</strong> — designed, printed, assembled, and electrically integrated</span>
-          <span><strong>ftc robotics</strong> — subsystem CAD, mechanism packaging, build decisions, and controls contributions</span>
-          <span><strong>modalai internship</strong> — drone bring-up, repair, camera calibration, documentation, and flight testing</span>
-        </section>
-
-        <section class="reference-list" aria-label="Software experiments">
-          <p>software experiments</p>
-          <a href="./faultline.html">faultline — research workflow prototype for comparing evidence across papers</a>
-          <a href="./rppg-pipeline.html">rppg pipeline — camera-based physiological-signal estimation experiment</a>
-        </section>
-
-        <section class="reference-list" id="direction" aria-label="Current engineering direction">
-          <p>current direction</p>
-          <span>learning dynamics, kinematics, controls, ros 2, and c++ to implement motion control on the arm</span>
-          <span>next: joint calibration, repeatable trajectories, and camera-based block detection</span>
-          <span>later: evaluate language-conditioned manipulation after reliable motion and perception are demonstrated</span>
-        </section>
-
-        <footer class="reference-footer" id="contact">
-          <div>
-            <a href="./Aakarsh_Sangar_CV.pdf">cv/resume</a>/<a href="https://github.com/aakarsh-s" target="_blank" rel="noreferrer">github</a>/<a href="https://www.linkedin.com/in/aakarsh-sangar/" target="_blank" rel="noreferrer">linkedin</a>
-          </div>
-          <span>© 2026 Aakarsh Sangar</span>
-        </footer>
       </section>
-
-      <aside class="reference-visual" aria-hidden="true">
-        <img
-          src="./assets/robotic-arm-sketch.jpg"
-          alt=""
-        />
-      </aside>
     </main>
+
+    <footer class="classic-footer">© 2026 Aakarsh Sangar</footer>
   </body>
 </html>

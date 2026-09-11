@@ -3,90 +3,109 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Selected engineering projects by Aakarsh Sangar."
-    />
+    <meta name="description" content="Engineering projects by Aakarsh Sangar." />
     <title>Projects | Aakarsh Sangar</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="reference-home project-links-page">
-    <main class="project-links-shell">
-      <section class="project-links-panel" aria-labelledby="projects-title">
-        <div class="identity-block">
-          <h1 id="projects-title">projects</h1>
-          <p>Aakarsh Sangar</p>
-        </div>
+  <body class="classic-portfolio classic-projects">
+    <header class="classic-header" aria-label="Primary navigation">
+      <a class="classic-brand" href="./index.html">Aakarsh Sangar</a>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./projects.html" aria-current="page">Projects</a>
+      </nav>
+    </header>
 
-        <p class="reference-bio">
-          My hardware work begins in CAD and develops through fabrication,
-          integration, testing, and revision. Each summary below presents the
-          system and my contribution; the single link opens its complete
-          iterative process.
-        </p>
+    <main class="classic-main">
+      <h1>Projects</h1>
 
-        <section class="hardware-projects" aria-labelledby="robotics-projects-title">
-          <h2 class="project-group-title" id="robotics-projects-title">robotics and mechanical systems</h2>
-
-          <article class="hardware-project">
-            <div class="hardware-project-copy">
-              <p class="hardware-project-meta">personal project / 2025-present</p>
-              <h2>Custom Robotic Arm</h2>
-              <p>
-                A self-directed platform for learning mechanism design,
-                actuation, electronics, and control through a system I could
-                manufacture and test myself.
-              </p>
-              <ul>
-                <li>Designed the arm architecture, trussed links, yaw base, gripper, and drivetrain packaging in CAD.</li>
-                <li>Printed and assembled the physical mechanism, then integrated a 24 V stepper power stage.</li>
-                <li>Developed an 8:1 planetary shoulder actuator after the original belt reduction reached its packaging limit.</li>
-              </ul>
-              <a class="iteration-link" href="./arm-iterations.html">view iterative process</a>
-            </div>
-            <figure class="hardware-project-media">
-              <img src="./assets/arm-iterations/17-real-current-prototype.png" alt="Integrated physical prototype of Aakarsh Sangar's robotic arm" />
-              <figcaption>Current physical prototype during electronics integration.</figcaption>
-            </figure>
-          </article>
-
-          <article class="hardware-project">
-            <div class="hardware-project-copy">
-              <p class="hardware-project-meta">cad lead and build team / 2020-2026</p>
-              <h2>FTC Robotics</h2>
-              <p>
-                Competition robotics with Team 18263 High Voltage, centered on
-                turning subsystem requirements into a serviceable, integrated robot.
-              </p>
-              <ul>
-                <li>Modeled most of the custom robot architecture and subsystem interfaces in Onshape.</li>
-                <li>Used the assembly to resolve intake, transfer, turret, shooter, sensing, and frame packaging.</li>
-                <li>Contributed during fabrication and to selected AprilTag, turret-aiming, and PID control work.</li>
-              </ul>
-              <a class="iteration-link" href="./ftc-robotics.html">view iterative process</a>
-            </div>
-            <figure class="hardware-project-media contain-media">
-              <img src="./assets/ftc/final-cad-full-assembly.jpg" alt="Final CAD assembly of FTC Team 18263's competition robot" />
-              <figcaption>Full-system CAD used to coordinate subsystem packaging.</figcaption>
-            </figure>
-          </article>
-        </section>
-
-        <section class="reference-list software-project-list" aria-labelledby="software-projects-title">
-          <p id="software-projects-title">software experiments</p>
-          <a href="./faultline.html">faultline</a>
-          <span>Hackathon prototype that organized literature search, evidence comparison, and experiment suggestions into a visible workflow.</span>
-          <a href="./rppg-pipeline.html">rppg pipeline</a>
-          <span>Computer-vision experiment for testing camera-based physiological-signal estimation on a Jetson Orin Nano.</span>
-        </section>
-
-        <footer class="reference-footer project-links-footer">
-          <div>
-            <a href="./index.html">home</a>/<a href="./internships.html">internships</a>/<a href="https://github.com/aakarsh-s" target="_blank" rel="noreferrer">github</a>/<a href="https://www.linkedin.com/in/aakarsh-sangar/" target="_blank" rel="noreferrer">linkedin</a>
+      <section class="classic-project-list" aria-label="Hardware projects">
+        <article class="classic-project-row">
+          <div class="classic-project-copy">
+            <h2>Custom Robotic Arm</h2>
+            <p class="classic-project-meta">Personal project · 2025–present</p>
+            <p>
+              I am developing a multi-joint arm as a practical platform for
+              mechanism design, actuation, electronics, and control. I designed
+              the system architecture, trussed links, rotating base, gripper,
+              drivetrain packaging, and most custom parts in CAD before printing
+              and assembling the mechanism.
+            </p>
+            <ul>
+              <li>Integrated a 24 V stepper power stage using DM542 and TMC2209 drivers.</li>
+              <li>Replaced a packaging-limited shoulder belt reduction with a custom 8:1 planetary actuator design.</li>
+              <li>Current work: joint calibration, repeatable motion, and camera-based block detection.</li>
+            </ul>
+            <a class="classic-detail-link" href="./arm-iterations.html">View iteration cycle</a>
           </div>
-          <span>© 2026 Aakarsh Sangar</span>
-        </footer>
+          <figure class="classic-project-media">
+            <img src="./assets/arm-iterations/17-real-current-prototype.png" alt="Current physical prototype of Aakarsh Sangar's robotic arm" />
+            <figcaption>Current physical prototype during electronics integration.</figcaption>
+          </figure>
+        </article>
+
+        <article class="classic-project-row media-first">
+          <div class="classic-project-copy">
+            <h2>FTC Robotics</h2>
+            <p class="classic-project-meta">Team 18263 High Voltage · 2020–2026</p>
+            <p>
+              As a CAD lead and builder, I modeled most of the custom robot and
+              used the full assembly to coordinate the intake, transfer, turret,
+              shooter, sensing, and frame within a compact competition envelope.
+              I carried those decisions into fabrication, assembly, and testing.
+            </p>
+            <ul>
+              <li>Designed subsystem interfaces, custom plates, and mechanism geometry in Onshape.</li>
+              <li>Resolved ball-path alignment, service access, interference, and mounting constraints in system-level CAD.</li>
+              <li>Contributed to selected AprilTag, turret-aiming, PID, and sensor-triggered control work.</li>
+            </ul>
+            <a class="classic-detail-link" href="./ftc-robotics.html">View iteration cycle</a>
+          </div>
+          <figure class="classic-project-media">
+            <img src="./assets/ftc/11-physical-field-ready.jpg" alt="Field-ready FTC competition robot built by Team 18263" />
+            <figcaption>Field-ready robot after subsystem integration and testing.</figcaption>
+          </figure>
+        </article>
+
+        <article class="classic-project-row">
+          <div class="classic-project-copy">
+            <h2>ModalAI Internship</h2>
+            <p class="classic-project-meta">High school engineering internship · 2024–2025</p>
+            <p>
+              I helped bring a VOXL 2 Mini-based drone from assembly through
+              embedded-camera calibration and physical flight testing. The work
+              required separating hardware, communication, software, and flight
+              issues into testable stages.
+            </p>
+            <ul>
+              <li>Assembled hardware, repaired GPS wiring, and tested RC and QGroundControl behavior.</li>
+              <li>Integrated the tracking camera, verified its VOXL connection, and completed fisheye calibration.</li>
+              <li>Helped convert the bring-up process into a repeatable assembly and setup manual.</li>
+            </ul>
+            <a class="classic-detail-link" href="./modalai-drone.html">View iteration cycle</a>
+          </div>
+          <figure class="classic-project-media">
+            <img src="./assets/modalai/modalai-drone-cover.jpg" alt="VOXL 2 Mini-based drone used during Aakarsh Sangar's ModalAI internship" />
+            <figcaption>Integrated drone platform used for camera and flight testing.</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="classic-software" aria-labelledby="software-title">
+        <h2 id="software-title">Software Projects</h2>
+        <div class="classic-software-grid">
+          <article>
+            <h3><a href="./faultline.html">Faultline</a></h3>
+            <p>A hackathon prototype for gathering research sources, comparing conflicting evidence, and preserving the workflow behind its output.</p>
+          </article>
+          <article>
+            <h3><a href="./rppg-pipeline.html">rPPG Pipeline</a></h3>
+            <p>A Jetson Orin Nano experiment that processes subtle color changes in camera video into a pulse-related signal.</p>
+          </article>
+        </div>
       </section>
     </main>
+
+    <footer class="classic-footer">© 2026 Aakarsh Sangar</footer>
   </body>
 </html>
