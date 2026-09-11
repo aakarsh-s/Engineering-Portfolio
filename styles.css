@@ -2159,7 +2159,7 @@ h2,
 
 .classic-main > h1 {
   margin: 0 0 48px;
-  color: #1d6f98;
+  color: #242424;
   font-size: clamp(2.35rem, 4.2vw, 3.7rem);
   font-weight: 400;
   line-height: 1.05;
@@ -2197,7 +2197,7 @@ h2,
 .classic-about-copy h2,
 .classic-software > h2 {
   margin: 0 0 22px;
-  color: #1d6f98;
+  color: #242424;
   font-size: clamp(1.7rem, 2.7vw, 2.45rem);
   font-weight: 400;
   line-height: 1.15;
@@ -2232,7 +2232,7 @@ h2,
 
 .classic-project-copy h2 {
   margin: 0 0 13px;
-  color: #1d6f98;
+  color: #242424;
   font-size: clamp(1.45rem, 2.4vw, 2rem);
   font-weight: 400;
   line-height: 1.2;
