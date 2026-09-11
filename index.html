@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Aakarsh Sangar's robotics, mechanical engineering, and AI project portfolio."
+      content="Aakarsh Sangar's engineering portfolio: robotic mechanisms, mechanical design, electronics, and control."
     />
     <title>Aakarsh Sangar</title>
     <link rel="stylesheet" href="./styles.css" />
@@ -21,37 +21,38 @@
 
         <nav class="reference-nav" aria-label="Portfolio links">
           <a href="#about">about</a>
+          <a href="#featured-work">featured work</a>
           <a href="./projects.html">projects</a>
           <a href="./internships.html">internships</a>
-          <a href="#progress">in progress</a>
-          <a href="#learning">learning</a>
+          <a href="#direction">current direction</a>
         </nav>
 
         <p class="reference-bio" id="about">
-          I am a First-Year Engineering student at Purdue University
-          interested in robotics, autonomous systems, and mechanical design. My
-          work focuses on building systems across CAD, actuators, embedded
-          computing, computer vision, and artificial intelligence. I am
-          currently working on a VLA model for my robotic arm: an embedded AI
-          system that uses computer vision to detect a block's color and pick
-          it up when prompted.
+          I design and build robotic mechanisms, then use electronics and
+          control software to make them move. My current platform is a custom
+          robotic arm developed through CAD, additive manufacturing, drivetrain
+          iteration, 24 V stepper electronics, and a purpose-built 8:1
+          planetary shoulder actuator.
         </p>
 
-        <section class="reference-list" id="progress" aria-label="Work in progress">
-          <p>in progress</p>
-          <span>vla model for robotic arm color detection and block pickup</span>
-          <span>jetson orin nano robotics platform for embedded ai and vla deployment</span>
-          <span>jetson-based rppg pipeline experimentation</span>
+        <section class="reference-list" id="featured-work" aria-label="Featured work">
+          <p>featured work</p>
+          <a href="./arm-iterations.html">custom robotic arm — designed, printed, assembled, and electrically integrated</a>
+          <a href="./ftc-robotics.html">ftc robotics — subsystem cad, mechanism packaging, build decisions, and controls contributions</a>
+          <a href="./modalai-drone.html">modalai internship — drone bring-up, repair, camera calibration, documentation, and flight testing</a>
         </section>
 
-        <section class="reference-list" id="learning" aria-label="Current learning">
-          <p>currently exploring</p>
-          <span>robot kinematics</span>
-          <span>inverse kinematics</span>
-          <span>ros2</span>
-          <span>jetson robotics</span>
-          <span>control systems</span>
-          <span>c++ for robotics</span>
+        <section class="reference-list" aria-label="Software experiments">
+          <p>software experiments</p>
+          <a href="./faultline.html">faultline — research workflow prototype for comparing evidence across papers</a>
+          <a href="./rppg-pipeline.html">rppg pipeline — camera-based physiological-signal estimation experiment</a>
+        </section>
+
+        <section class="reference-list" id="direction" aria-label="Current engineering direction">
+          <p>current direction</p>
+          <span>learning dynamics, kinematics, controls, ros 2, and c++ to implement motion control on the arm</span>
+          <span>next: joint calibration, repeatable trajectories, and camera-based block detection</span>
+          <span>later: evaluate language-conditioned manipulation after reliable motion and perception are demonstrated</span>
         </section>
 
         <footer class="reference-footer" id="contact">

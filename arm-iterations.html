@@ -35,16 +35,57 @@
         <p class="detail-kicker">Custom Robotic Arm</p>
         <h1 id="iterations-title">Arm Iterations</h1>
         <p class="detail-copy">
-          A curated build log showing the arm's progression from CAD and
-          manufacturable printed geometry into a wired, actuated physical
-          prototype with a yaw base, shoulder transmission, trussed links, and
-          gripper assembly.
+          I designed and built this arm as a platform for learning robotic
+          actuation and control. The work progressed from system-level CAD and
+          printed structures to drivetrain iteration, 24 V stepper electronics,
+          a custom 8:1 shoulder actuator, and an integrated physical prototype.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="./projects.html">Back to Projects</a>
+          <a class="button secondary" href="#arm-build-log">Read Full Build Log</a>
         </div>
       </section>
 
+      <section class="section" aria-labelledby="arm-overview-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">At a Glance</p>
+            <h2 id="arm-overview-title">From CAD to an integrated mechanical platform</h2>
+          </div>
+          <p>
+            The central engineering decision was replacing a packaging-limited
+            shoulder belt reduction with a compact, purpose-built planetary drive.
+          </p>
+        </div>
+        <div class="case-study-grid">
+          <div class="case-study-stat">
+            <strong>My role</strong>
+            <span>Personal project: mechanical CAD, printed-part iteration, drivetrain design, assembly, electronics integration, and bench testing.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Constraint</strong>
+            <span>The shoulder needed more torque, but the arm envelope could not fit the pulley reduction required by the original belt concept.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Decision</strong>
+            <span>I designed an 8:1 planetary shoulder actuator that packaged the gear train, shafts, bearings, and housing into one module.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Current state</strong>
+            <span>The physical prototype integrates the yaw base, trussed links, gripper, belt-driven shoulder hardware, wiring, power supply, and motor drivers. The 8:1 planetary actuator is the final CAD direction for replacing the constrained belt reduction.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Next step</strong>
+            <span>Calibrate the joints, reduce backlash, and demonstrate repeatable trajectories before adding camera-based block detection.</span>
+          </div>
+        </div>
+      </section>
+
+      <details class="build-log-disclosure" id="arm-build-log">
+        <summary>
+          <span>Read full build log</span>
+          <small>13 phases: concept, fabrication, electronics, drivetrain redesign, and current prototype</small>
+        </summary>
       <section class="section iteration-grid" aria-label="Robotic arm iteration gallery">
         <article class="iteration-card">
           <img
@@ -332,13 +373,13 @@
             <p>
               The latest build combines the yaw base, shoulder structure,
               trussed links, pulley-driven joint hardware, servo-actuated
-              gripper, power electronics, and wiring into a functional
-              prototype ready for continued control refinement.
+              gripper, power electronics, and wiring into an integrated
+              prototype ready for continued actuation and control testing.
             </p>
             <ul>
               <li>Transitioned from CAD validation to a physical robotic manipulator platform.</li>
               <li>Integrated mechanical, electrical, and embedded-control work into one system.</li>
-              <li>Next improvements target cleaner cable management, backlash reduction, and closed-loop joint control.</li>
+              <li>Next improvements target cleaner cable management, backlash reduction, joint calibration, and repeatable motion.</li>
             </ul>
           </div>
         </article>
@@ -505,11 +546,12 @@
           </article>
         </div>
       </section>
+      </details>
     </main>
 
     <footer class="footer">
       <span>© <span id="year"></span> Aakarsh Sangar</span>
-      <span>Robotics • Mechanical Design • AI</span>
+      <span>Mechanical Design - Robotics - Embedded Systems</span>
     </footer>
 
     <script src="./script.js"></script>

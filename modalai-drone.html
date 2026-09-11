@@ -32,11 +32,11 @@
 
     <main>
       <section class="detail-hero" aria-labelledby="modalai-title">
-        <p class="detail-kicker">Autonomous Drone Integration</p>
+        <p class="detail-kicker">High School Engineering Internship</p>
         <h1 id="modalai-title">ModalAI Internship</h1>
         <p class="detail-copy">
-          Sophomore-year high school internship work focused on taking a VOXL 2
-          Mini-based drone platform through hardware assembly, wiring repair,
+          During my sophomore year of high school, I contributed to bringing a
+          VOXL 2 Mini-based drone through hardware assembly, wiring repair,
           QGroundControl tuning, camera bring-up, calibration, documentation,
           and flight testing.
         </p>
@@ -58,10 +58,52 @@
           >
             Midterm Presentation
           </a>
+          <a class="button secondary" href="#modalai-build-log">Read Full Build Log</a>
         </div>
 
       </section>
 
+      <section class="section" aria-labelledby="modalai-overview-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">At a Glance</p>
+            <h2 id="modalai-overview-title">Structured bring-up across hardware and software</h2>
+          </div>
+          <p>
+            The internship taught me to separate a coupled robotics problem into
+            testable stages and to turn failures into repair, tuning, and
+            documentation tasks.
+          </p>
+        </div>
+        <div class="case-study-grid">
+          <div class="case-study-stat">
+            <strong>My contribution</strong>
+            <span>Hardware assembly, wiring repair, camera integration, calibration work, QGroundControl testing, flight testing, and build documentation.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Constraint</strong>
+            <span>The platform combined motors, GPS, RC control, a VOXL computer, cameras, and flight software, so one fault could block the entire bring-up sequence.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Decision</strong>
+            <span>I worked through a staged workflow and component-level checks to isolate hardware, communication, camera, calibration, and flight problems.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Result</strong>
+            <span>The drone armed, produced physical lift, and completed fisheye-camera calibration; the first high-thrust test also exposed stability, disarm, and GPS-wiring failure modes.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Next step identified</strong>
+            <span>Repair the damaged GPS-side wiring and retune thrust and disarm behavior for safer, controlled flight.</span>
+          </div>
+        </div>
+      </section>
+
+      <details class="build-log-disclosure" id="modalai-build-log">
+        <summary>
+          <span>Read full build log</span>
+          <small>10 phases: assembly, repair, camera bring-up, calibration, and flight testing</small>
+        </summary>
       <section class="section process-list" aria-label="ModalAI internship phase log">
         <article class="process-step flight-step">
           <img
@@ -268,6 +310,7 @@
           </div>
         </article>
       </section>
+      </details>
 
       <section class="section modalai-notes" aria-labelledby="notes-title">
         <div class="section-heading">
@@ -354,7 +397,7 @@
 
     <footer class="footer">
       <span>© <span id="year"></span> Aakarsh Sangar</span>
-      <span>Robotics - Mechanical Design - AI</span>
+      <span>Hardware Integration - Embedded Systems - Flight Testing</span>
     </footer>
 
     <script src="./script.js"></script>

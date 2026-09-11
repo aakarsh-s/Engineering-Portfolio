@@ -36,12 +36,49 @@
         <p class="detail-copy">
           Competition robot design, build, and testing with Team #18263 High
           Voltage. This section focuses on my engineering contributions:
-          CADing most of the custom robot architecture, making packaging and
+          modeling most of the custom robot architecture in CAD, making packaging and
           mechanism decisions during the build, and contributing to the control
           code that connected sensing, shooter behavior, and field operation.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="./projects.html">Back to Projects</a>
+          <a class="button secondary" href="#ftc-build-log">Read Full Build Log</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="ftc-overview-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">At a Glance</p>
+            <h2 id="ftc-overview-title">My work within a team-built competition robot</h2>
+          </div>
+          <p>
+            I used system-level CAD to connect mechanism choices to the physical
+            robot, then contributed during fabrication, testing, and selected
+            controls work. Awards listed below are team results.
+          </p>
+        </div>
+        <div class="case-study-grid">
+          <div class="case-study-stat">
+            <strong>My contribution</strong>
+            <span>Subsystem CAD, intake and transfer geometry, turret and shooter packaging, custom plates, build decisions, and selected sensor and control logic.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Constraint</strong>
+            <span>The intake, transfer path, turret, shooter, sensors, and drivetrain had to share a compact competition envelope while remaining serviceable.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Decision</strong>
+            <span>I used the full CAD assembly to resolve ball-path alignment, mechanism interference, mounting access, and subsystem integration before and during fabrication.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Team result</strong>
+            <span>The integrated robot combined automated aiming, sensor-triggered behavior, autonomous scoring work, and a field-tested mechanical system.</span>
+          </div>
+          <div class="case-study-stat">
+            <strong>Next step</strong>
+            <span>Continue field validation of subsystem timing, scoring consistency, and driver-facing behavior under match conditions.</span>
+          </div>
         </div>
       </section>
 
@@ -159,6 +196,11 @@
         </div>
       </section>
 
+      <details class="build-log-disclosure" id="ftc-build-log">
+        <summary>
+          <span>Read full build log</span>
+          <small>8 phases: strategy, mechanism iteration, CAD, controls contributions, and field testing</small>
+        </summary>
       <section class="section iteration-grid" aria-label="FTC robot iteration gallery">
         <article class="iteration-card">
           <img
@@ -320,9 +362,9 @@
               reliable.
             </p>
             <ul>
-              <li>Used AprilTag pose math to relocalize the robot from the goal target.</li>
-              <li>Built a 20-point distance sample to model shooter RPM as <code>1768.96491 + 7.3377 * distance</code>.</li>
-              <li>Reduced loop time from roughly 60 ms to 15 ms by writing actuator power once per loop.</li>
+              <li>I contributed to AprilTag pose work used to relocalize the robot from the goal target.</li>
+              <li>The team used a 20-point distance sample to model shooter RPM as <code>1768.96491 + 7.3377 * distance</code>.</li>
+              <li>The software reduced loop time from roughly 60 ms to 15 ms by writing actuator power once per loop.</li>
             </ul>
           </div>
         </article>
@@ -348,11 +390,12 @@
           </div>
         </article>
       </section>
+      </details>
     </main>
 
     <footer class="footer">
       <span>© <span id="year"></span> Aakarsh Sangar</span>
-      <span>Robotics - Mechanical Design - AI</span>
+      <span>Competition Robotics - Mechanical CAD - Controls Contributions</span>
     </footer>
 
     <script src="./script.js"></script>

@@ -2,12 +2,12 @@
   {
     "title": "Custom Robotic Arm",
     "featured": true,
-    "category": "Mechanical Design & Control",
+    "category": "Robotic Mechanism Design",
     "status": "2025-Present",
-    "description": "Multi-joint robotic arm focused on mechanical design, actuator selection, manipulation, inverse kinematics, joint control, motion planning, and future computer-vision-guided autonomy.",
+    "description": "Custom robotic arm developed through mechanical CAD, additive manufacturing, drivetrain iteration, 24 V stepper electronics, and a purpose-built 8:1 planetary shoulder actuator. Joint calibration and repeatable motion are the next milestones before camera-based manipulation.",
     "github": "",
     "docs": "./arm-iterations.html",
-    "docsLabel": "Arm Iterations",
+    "docsLabel": "Engineering Decisions",
     "image": "./assets/arm-iterations/17-real-current-prototype.png",
     "imageAlt": "Current physical prototype of Aakarsh Sangar's custom robotic arm with gripper and wiring",
     "tags": ["CAD", "Stepper Motors", "Servo Motors", "Robotics", "Embedded Systems"]
@@ -15,22 +15,22 @@
   {
     "title": "Jetson Orin Nano Robotics Platform",
     "featured": false,
-    "category": "In Progress / Embedded AI Robotics",
-    "status": "VLA Model Development",
-    "description": "NVIDIA Jetson Orin Nano robotics computing platform currently being used for an embedded VLA model for the robotic arm, with the goal of using computer vision to detect a block's color and pick it up when prompted. I have also used the Jetson platform for rPPG pipeline experimentation.",
+    "category": "Embedded Computing Platform",
+    "status": "Supporting Platform",
+    "description": "NVIDIA Jetson Orin Nano used for rPPG pipeline experimentation and planned as the embedded computer for future camera-based block detection after the robotic arm demonstrates calibrated, repeatable motion.",
     "github": "",
     "docs": "",
     "docsLabel": "Build Notes",
     "image": "",
     "imageAlt": "Jetson Orin Nano robotics platform setup",
-    "tags": ["VLA", "Embedded AI", "OpenCV", "NVIDIA Jetson", "Linux", "rPPG"]
+    "tags": ["OpenCV", "NVIDIA Jetson", "Linux", "rPPG", "Embedded Computing"]
   },
   {
     "title": "Faultline",
-    "featured": true,
-    "category": "Multi-Agent AI Research Assistant",
+    "featured": false,
+    "category": "Research Workflow Prototype",
     "status": "CalHacks AI 2026",
-    "description": "Multi-agent research tool created at CalHacks AI Hackathon to analyze academic literature, identify conflicting claims between papers, summarize findings, compare methods, and propose validation experiments.",
+    "description": "CalHacks AI prototype that organized literature search, evidence extraction, conflict identification, and experiment suggestions into a visible research workflow with a preserved reasoning trail.",
     "github": "",
     "docs": "./faultline.html",
     "docsLabel": "Project Links",
@@ -45,14 +45,14 @@
       }
     ],
     "imageAlt": "Faultline AI research assistant interface",
-    "tags": ["Python", "LLM APIs", "AI Agents", "Information Retrieval"]
+    "tags": ["Python", "Literature Search", "Evidence Comparison", "Workflow Design"]
   },
   {
     "title": "Vision-Based Health Monitoring System",
-    "featured": true,
-    "category": "rPPG & Computer Vision",
+    "featured": false,
+    "category": "Computer Vision Experiment",
     "status": "2026",
-    "description": "Computer vision approach for estimating physiological signals from camera input, exploring remote photoplethysmography and non-contact heart-rate monitoring through an rPPG pipeline tested with the Jetson Orin Nano platform.",
+    "description": "Runnable computer-vision prototype for experimenting with pulse-related signal estimation from camera video on a Jetson Orin Nano; it is not presented as a clinically validated measurement system.",
     "github": "",
     "docs": "./rppg-pipeline.html",
     "docsLabel": "Project Links",
@@ -62,10 +62,10 @@
   },
   {
     "title": "FIRST / FTC Robotics",
-    "featured": false,
+    "featured": true,
     "category": "Competition Robotics",
     "status": "Team Project",
-    "description": "Competition robot design, build, and testing through iterative mechanical and electrical development with mechanisms, motors, sensors, and integrated robot systems.",
+    "description": "Team competition robot for which I contributed subsystem CAD, mechanical packaging, build decisions, and selected sensor and control logic. Awards and match outcomes are team results.",
     "github": "",
     "docs": "./ftc-robotics.html",
     "docsLabel": "FTC Build Log",
