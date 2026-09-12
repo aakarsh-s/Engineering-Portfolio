@@ -2158,12 +2158,40 @@ h2,
 }
 
 .classic-main > h1 {
-  margin: 0 0 48px;
+  margin: 0 0 14px;
   color: #242424;
   font-size: clamp(2.35rem, 4.2vw, 3.7rem);
   font-weight: 400;
   line-height: 1.05;
   text-align: center;
+}
+
+.classic-profile-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 0 0 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.86rem;
+}
+
+.classic-profile-links a {
+  color: #3d3d3d;
+  text-decoration-color: #aaa;
+  text-underline-offset: 3px;
+}
+
+.classic-profile-links a:hover {
+  color: #14698f;
+  text-decoration-color: currentColor;
+}
+
+.classic-profile-links a + a::before {
+  margin: 0 12px;
+  color: #aaa;
+  content: "/";
+  text-decoration: none;
 }
 
 .classic-about {
