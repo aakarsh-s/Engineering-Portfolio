@@ -4239,3 +4239,270 @@ h2,
 .visual-projects .classic-project-media figcaption {
   text-align: center;
 }
+
+/* ==================================================
+   ALL HARDWARE PROJECTS — Visual-first build logs
+   ================================================== */
+
+/* Widen the individual project pages */
+
+.detail-page.arm-detail .site-header,
+.detail-page.arm-detail .detail-hero,
+.detail-page.arm-detail .section,
+.detail-page.arm-detail .footer,
+.detail-page.modalai-detail .site-header,
+.detail-page.modalai-detail .detail-hero,
+.detail-page.modalai-detail .section,
+.detail-page.modalai-detail .footer,
+.detail-page.ftc-detail .site-header,
+.detail-page.ftc-detail .detail-hero,
+.detail-page.ftc-detail .section,
+.detail-page.ftc-detail .footer {
+  width: min(1150px, calc(100% - 48px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Consistent 65/35 media-to-text layout */
+
+.arm-detail .iteration-grid > .iteration-card,
+.modalai-detail .process-list > .process-step,
+.ftc-detail .ftc-build-gallery > .iteration-card {
+  display: grid;
+  grid-template-columns: minmax(0, 65fr) minmax(0, 35fr);
+  align-items: center;
+  gap: 36px;
+  padding: 32px 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  background: transparent;
+}
+
+/* Single images and videos */
+
+.arm-detail .iteration-grid > .iteration-card > img,
+.modalai-detail .process-list > .process-step > img,
+.modalai-detail .process-list > .process-step > video,
+.ftc-detail .ftc-build-gallery .ftc-build-media img,
+.ftc-detail .ftc-build-gallery .ftc-build-media video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 540px;
+  aspect-ratio: auto;
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+  object-fit: contain;
+  object-position: center;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* Multi-image media containers */
+
+.arm-detail .iteration-grid .iteration-media,
+.ftc-detail .ftc-build-gallery .ftc-build-media {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  gap: 14px;
+  justify-items: center;
+  align-items: center;
+  background: transparent;
+}
+
+/* Robotic arm planetary actuator comparison */
+
+.arm-detail .iteration-grid .split-media {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto;
+}
+
+.arm-detail .iteration-grid .iteration-media img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background: transparent;
+}
+
+/* Robotic arm electronics photographs */
+
+.arm-detail .iteration-grid .electronics-media {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.arm-detail .iteration-grid .electronics-media img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 280px;
+}
+
+.arm-detail .iteration-grid .electronics-media img:first-child {
+  grid-column: 1 / -1;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 340px;
+}
+
+/* FTC multi-image comparisons */
+
+.ftc-detail .ftc-build-gallery .ftc-media-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ftc-detail .ftc-build-gallery .ftc-media-stack {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* Technical descriptions */
+
+.arm-detail .iteration-grid .iteration-body,
+.modalai-detail .process-list .process-body,
+.ftc-detail .ftc-build-gallery .iteration-body {
+  min-width: 0;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.arm-detail .iteration-grid .iteration-body h2,
+.modalai-detail .process-list .process-body h2,
+.ftc-detail .ftc-build-gallery .iteration-body h2 {
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.arm-detail .iteration-grid .iteration-body p,
+.arm-detail .iteration-grid .iteration-body li,
+.modalai-detail .process-list .process-body p,
+.modalai-detail .process-list .process-body li,
+.ftc-detail .ftc-build-gallery .iteration-body p,
+.ftc-detail .ftc-build-gallery .iteration-body li {
+  font-size: 0.91rem;
+  line-height: 1.65;
+}
+
+.arm-detail .iteration-grid .iteration-body .eyebrow,
+.modalai-detail .process-list .process-body .eyebrow,
+.ftc-detail .ftc-build-gallery .iteration-body .eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.arm-detail .iteration-grid .iteration-body ul,
+.modalai-detail .process-list .process-body ul,
+.ftc-detail .ftc-build-gallery .iteration-body ul {
+  margin-top: 14px;
+  padding-left: 18px;
+}
+
+/* Supporting robotic arm galleries */
+
+.arm-detail .component-grid,
+.arm-detail .supporting-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.arm-detail .component-grid .component-card > img,
+.arm-detail .supporting-gallery .supporting-card > img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 340px;
+  aspect-ratio: auto;
+  margin: 0 auto 16px;
+  padding: 0;
+  object-fit: contain;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background: transparent;
+}
+
+/* FTC CAD gallery */
+
+.ftc-detail .cad-gallery img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 380px;
+  aspect-ratio: auto;
+  margin: 0 auto;
+  padding: 0;
+  object-fit: contain;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background: transparent;
+}
+
+/* Tablet formatting */
+
+@media (max-width: 1000px) {
+  .arm-detail .iteration-grid > .iteration-card,
+  .modalai-detail .process-list > .process-step,
+  .ftc-detail .ftc-build-gallery > .iteration-card {
+    gap: 26px;
+  }
+}
+
+/* Mobile formatting */
+
+@media (max-width: 850px) {
+  .arm-detail .iteration-grid > .iteration-card,
+  .modalai-detail .process-list > .process-step,
+  .ftc-detail .ftc-build-gallery > .iteration-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    padding: 26px 0;
+  }
+
+  .arm-detail .iteration-grid > .iteration-card > img,
+  .modalai-detail .process-list > .process-step > img,
+  .modalai-detail .process-list > .process-step > video,
+  .ftc-detail .ftc-build-gallery .ftc-build-media img,
+  .ftc-detail .ftc-build-gallery .ftc-build-media video {
+    max-height: 420px;
+  }
+
+  .arm-detail .iteration-grid .iteration-body,
+  .modalai-detail .process-list .process-body,
+  .ftc-detail .ftc-build-gallery .iteration-body {
+    grid-column: 1;
+    grid-row: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .arm-detail .iteration-grid .split-media,
+  .arm-detail .iteration-grid .electronics-media,
+  .arm-detail .component-grid,
+  .arm-detail .supporting-gallery,
+  .ftc-detail .ftc-build-gallery .ftc-media-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
