@@ -3917,3 +3917,124 @@ h2,
 .classic-home a.classic-project-button:hover span {
   transform: translate(2px, -2px);
 }
+
+/* FTC — Media-focused engineering build log */
+
+.ftc-detail .ftc-build-gallery .iteration-card {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
+  align-items: center;
+  gap: 32px;
+}
+
+.ftc-detail .ftc-build-gallery .ftc-build-media {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+
+.ftc-detail .ftc-build-gallery .ftc-build-media img,
+.ftc-detail .ftc-build-gallery .ftc-build-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  min-width: 0;
+  object-fit: contain;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  padding: 6px;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.ftc-detail .ftc-build-gallery .ftc-media-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+}
+
+.ftc-detail .ftc-build-gallery .ftc-media-stack {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.ftc-detail .ftc-build-gallery .iteration-body {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 0;
+}
+
+.ftc-detail .ftc-build-gallery .iteration-body h2 {
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.ftc-detail .ftc-build-gallery .iteration-body p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.ftc-detail .ftc-build-gallery .iteration-body .eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
+
+.ftc-detail .ftc-build-gallery .ftc-performance {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.ftc-detail .ftc-build-gallery .ftc-performance > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.ftc-detail .ftc-build-gallery .ftc-performance strong {
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.ftc-detail .ftc-build-gallery .ftc-performance span {
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+/* FTC — Tablet and mobile layout */
+
+@media (max-width: 850px) {
+  .ftc-detail .ftc-build-gallery .iteration-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .ftc-detail .ftc-build-gallery .ftc-build-media {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .ftc-detail .ftc-build-gallery .iteration-body {
+    grid-column: 1;
+    grid-row: auto;
+    padding: 0;
+  }
+
+  .ftc-detail .ftc-build-gallery .ftc-build-media img,
+  .ftc-detail .ftc-build-gallery .ftc-build-media video {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ftc-detail .ftc-build-gallery .ftc-media-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
