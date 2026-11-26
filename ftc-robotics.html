@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,6 +17,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body class="detail-page ftc-detail">
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="./index.html" aria-label="Aakarsh Sangar home">
@@ -53,6 +55,7 @@
             controls work. Awards listed below are team results.
           </p>
         </div>
+
         <div class="case-study-grid">
           <div class="case-study-stat">
             <strong>My contribution</strong>
@@ -158,7 +161,7 @@
       <section class="section ftc-awards" aria-labelledby="awards-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Awards & Recognition</p>
+            <p class="eyebrow">Awards &amp; Recognition</p>
             <h2 id="awards-title">Team awards</h2>
           </div>
           <p>
@@ -191,222 +194,297 @@
         </div>
       </section>
 
-      <details class="build-log-disclosure" id="ftc-build-log">
-        <summary>
-          <span>Read full build log</span>
-          <small>9 phases: strategy, mechanism iteration, CAD, controls contributions, and field testing</small>
-        </summary>
-      <section class="section iteration-grid" aria-label="FTC robot iteration gallery">
+      <!-- FTC ROBOT BUILD LOG -->
+
+      <section
+        class="section iteration-grid ftc-build-gallery"
+        id="ftc-build-log"
+        aria-label="FTC robot iteration gallery"
+      >
+
+        <!-- PHASE 01 -->
+
         <article class="iteration-card">
-          <img
-            class="portfolio-extract-image"
-            src="./assets/ftc/portfolio-extract-01-design-cycle.jpg"
-            alt="Extracted FTC portfolio figure showing the intake engineering design cycle and captions"
-          />
+          <div class="ftc-build-media">
+            <img
+              src="./assets/ftc/IMG_7532.jpg"
+              alt="Preliminary FTC chassis and shooter assembly"
+              loading="lazy"
+            />
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 01 / Strategy & Design Process</p>
-            <h2>Driver-centered architecture</h2>
+            <p class="eyebrow">Phase 01 / Preliminary Design</p>
+            <h2>Initial chassis and shooter assembly</h2>
             <p>
-              The season began with a strategic decision to make the robot fast,
-              consistent, and easy to control under defense. The design process
-              centered on automated aiming, reliable autonomous scoring, and a
-              mechanism layout that could cycle quickly without depending on
-              perfect driver alignment.
+              I developed the initial mechanical architecture in Onshape,
+              establishing the chassis, shooter positioning, and preliminary
+              ball-transfer geometry before integrating a complete intake.
+              This prototype provided a physical reference for evaluating
+              subsystem packaging and mechanical interfaces.
             </p>
-            <ul>
-              <li>Started with a dual-wheel horizontal intake concept, then pivoted after CAD showed compression issues and dead zones.</li>
-              <li>Used CAD, prototype testing, stress checks, and risk mitigation features like the stopper and hood to catch problems before competition.</li>
-            </ul>
           </div>
         </article>
 
+        <!-- PHASE 02 -->
+
         <article class="iteration-card">
-          <img
-            class="portfolio-extract-image"
-            src="./assets/ftc/portfolio-extract-02-evolutions.jpg"
-            alt="Extracted FTC portfolio figures comparing S.P.A.R.K V1, V2, turret design, and molded wheel iterations"
-          />
+          <div class="ftc-build-media">
+            <video controls playsinline preload="metadata">
+              <source
+                src="./assets/ftc/IMG_7693.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support embedded video.
+            </video>
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 02 / S.P.A.R.K Evolutions</p>
-            <h2>From V1 reliability to V2 automation</h2>
+            <p class="eyebrow">Phase 02 / Trajectory Calibration</p>
+            <h2>Initial shooter kinematics testing</h2>
             <p>
-              V1 proved the team could score consistently, but it exposed slow
-              transfer between the intake and shooter. V2 added custom molded
-              silicone wheels, wedges, an inertial flywheel, retractable hood,
-              active transfer, and a turret that tracks the target to reduce
-              driver error.
+              Conducted preliminary shooting tests to calibrate the kinematic
+              calculations used to determine the required launch angle based
+              on distance from the target. Physical testing helped establish
+              the relationship between theoretical ball trajectories and
+              actual shooter behavior.
             </p>
-            <ul>
-              <li>Used dual geared Axon servos for the turret instead of dedicating a planetary motor.</li>
-              <li>Reached roughly 0.5 N-m of turret torque with a 1.1 second 360-degree rotation target.</li>
-            </ul>
           </div>
         </article>
 
+        <!-- PHASE 03 -->
+
         <article class="iteration-card">
-          <img
-            class="portfolio-extract-image"
-            src="./assets/ftc/portfolio-extract-03-transfer-intake-stopper.jpg"
-            alt="Extracted FTC portfolio figures summarizing transfer, intake ramp, and stopper iterations"
-          />
+          <div class="ftc-build-media">
+            <video controls playsinline preload="metadata">
+              <source
+                src="./assets/ftc/IMG_7545.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support embedded video.
+            </video>
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 03 / Mechanism Iteration</p>
-            <h2>Transfer, intake, and stopper refinement</h2>
+            <p class="eyebrow">Phase 03 / Controls Refinement</p>
+            <h2>Shooter algorithm validation</h2>
             <p>
-              The portfolio groups the most important iteration loop: transfer,
-              intake ramp, and stopper design. The transfer moved from a simple
-              upward curved ramp to a kicker, then to a stopper, and finally to
-              embedded custom silicone wheels inside the transfer ramp. My work
-              focused on translating these mechanism decisions into CAD and
-              buildable packaging.
+              Continued refining the shooter control code through repeated
+              physical launch tests. Observed discrepancies between calculated
+              and actual trajectories informed adjustments to the hood-angle
+              calculations, improving shooting consistency across different
+              distances from the target.
             </p>
-            <ul>
-              <li>Reduced unload time from about 5 seconds to 0.43 seconds while improving reliability.</li>
-              <li>Changed the intake ramp from a jamming straight ramp to a wedge-guided system able to intake three balls in under 1.5 seconds.</li>
-              <li>Replaced a weak overhead stopper with a rotating stopper that handled stronger tangential forces in a tight package.</li>
-            </ul>
           </div>
         </article>
 
+        <!-- PHASE 04 -->
+
         <article class="iteration-card">
-          <img
-            class="portfolio-extract-image"
-            src="./assets/ftc/portfolio-extract-04-retractable-hood.jpg"
-            alt="Extracted FTC portfolio figures explaining the dual-servo retractable hood and fixed launch angles"
-          />
+          <div class="ftc-build-media">
+            <img
+              src="./assets/ftc/IMG_7971.jpg"
+              alt="Intermediate rubber-band intake with additional rubber wheels"
+              loading="lazy"
+            />
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 04 / Retractable Hood</p>
-            <h2>Fast fixed-angle shot control</h2>
+            <p class="eyebrow">Phase 04 / Intake Iteration</p>
+            <h2>Compliant rubber-band intake</h2>
             <p>
-              The retractable hood gave the shooter two repeatable launch
-              angles instead of relying on a continuously adjustable mechanism
-              that could slip. The hood was directly driven by dual torque
-              servos and swapped between fixed geometric states.
+              The intermediate intake used flexible rubber bands to acquire
+              and transport balls. Additional rubber wheels increased friction
+              and partially improved acquisition, but inconsistent contact
+              between the intake and ball surfaces continued to cause slippage.
+              These limitations motivated a custom molded wheel design.
             </p>
-            <ul>
-              <li>Used a 1.8 inch, 45 degree hood state and a 3.5 inch, 30 degree hood state.</li>
-              <li>Traded full-range movement for exact angles, faster adjustment, and more consistent shooting.</li>
-            </ul>
           </div>
         </article>
 
+        <!-- PHASE 05 -->
+
         <article class="iteration-card">
-          <img
-            class="portfolio-extract-image"
-            src="./assets/ftc/portfolio-extract-05-subsystem-design.jpg"
-            alt="Extracted FTC portfolio figures showing shooter, turret, transfer ramp, intake, and flywheel subsystem design"
-          />
+          <div class="ftc-build-media">
+            <img
+              src="./assets/ftc/IMG_7954.jpg"
+              alt="Meet 3 competition robot with intermediate intake and shooter assembly"
+              loading="lazy"
+            />
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 05 / Subsystem Design</p>
-            <h2>Parallel plates and active transfer</h2>
+            <p class="eyebrow">Phase 05 / Meet 3 Robot</p>
+            <h2>Integrated intermediate competition robot</h2>
             <p>
-              I modeled most of the custom subsystem geometry in CAD and used a
-              parallel-plate robot architecture so the drivetrain, shooter,
-              turret, transfer ramp, intake, Limelight, stopper, and
-              electronics could be integrated into one cohesive structure
-              before manufacturing.
+              This iteration introduced lighter structural plates, a lowered
+              intake ramp, more reliable internal ball transfer, and a
+              functional adjustable shooter hood for scoring from different
+              distances.
             </p>
-            <ul>
-              <li>Modeled custom plates, intake guides, transfer geometry, turret packaging, and shooter integration around real hardware constraints.</li>
-              <li>Mounted the shooter on a turret driven through a servo gear mechanism and Lazy Susan bearing.</li>
-              <li>Embedded wheels into the transfer ramp to turn a passive ramp into an active transfer system.</li>
-              <li>Improved transfer unload from 3.5 seconds to 0.43 seconds and intake time from 4 seconds to 0.5 seconds.</li>
-            </ul>
+            <p>
+              However, intake slippage and slow transfer to the elevated
+              shooter limited scoring throughput to approximately one shot
+              every three seconds, establishing the primary performance
+              constraint for the final redesign.
+            </p>
           </div>
         </article>
 
+        <!-- PHASE 06 -->
+
         <article class="iteration-card">
-          <img
-            class="portfolio-extract-image"
-            src="./assets/ftc/portfolio-extract-06-self-awareness.jpg"
-            alt="Extracted FTC portfolio figures describing distance sensors, odometry, PID control, path planning, and turret auto-aim"
-          />
+          <div class="ftc-build-media">
+            <img
+              src="./assets/ftc/IMG_7992.jpg"
+              alt="Redesigned compact drivetrain with pocketed structural side plates"
+              loading="lazy"
+            />
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 06 / Control Self-Awareness</p>
-            <h2>Sensors, odometry, and auto-aim</h2>
+            <p class="eyebrow">Phase 06 / Structural Redesign</p>
+            <h2>Compact and lightweight chassis</h2>
             <p>
-              I contributed to the coding and tuning work that helped the robot
-              respond to its own state. Distance sensors detected when balls
-              entered the intake and whether balls were still inside the
-              shooter, while odometry and turret feedback improved autonomous
-              and tele-op consistency.
+              I redesigned the chassis in Onshape with a narrower footprint
+              and pocketed structural side plates. The reduced dimensions
+              improved maneuverability around field obstacles, while removing
+              unnecessary material reduced drivetrain load and supported
+              faster field traversal.
             </p>
-            <ul>
-              <li>Used Pinpoint odometry with two dead wheels, ending matches over 15 inches more accurate than a three-wheel setup.</li>
-              <li>Ran drivetrain and shooter motors with PID control, holding shooter speed above 3000 RPM with less than 2% error.</li>
-              <li>Worked on sensor-triggered behavior and turret feedback so drivers had less manual timing and aiming burden.</li>
-            </ul>
           </div>
         </article>
 
+        <!-- PHASE 07 -->
+
         <article class="iteration-card">
-          <img
-            class="portfolio-extract-image"
-            src="./assets/ftc/portfolio-extract-07-external-awareness.jpg"
-            alt="Extracted FTC portfolio figures describing Limelight relocalization, regression shooting, motor caching, and state machine logic"
-          />
+          <div class="ftc-build-media ftc-media-pair">
+            <img
+              src="./assets/ftc/IMG_8092.jpg"
+              alt="Custom molded silicone intake wheels and shaft assembly"
+              loading="lazy"
+            />
+            <img
+              src="./assets/ftc/IMG_8093.jpg"
+              alt="Integrated multi-stage silicone and Gecko wheel intake"
+              loading="lazy"
+            />
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 07 / External Awareness</p>
-            <h2>Vision relocalization and software architecture</h2>
+            <p class="eyebrow">Phase 07 / Custom Component Manufacturing</p>
+            <h2>High-friction silicone intake wheels</h2>
             <p>
-              To correct odometry drift and shoot from different launch-zone
-              positions, I contributed to the control-side work around
-              Limelight AprilTag relocalization, shooter modeling, and
-              state-based robot behavior. The software also used motor caching
-              and a simplified state machine to make actuation faster and more
-              reliable.
+              I designed custom intake wheel geometry and 3D-printed molds
+              for casting silicone wheels with controlled dimensions and
+              high-friction contact surfaces.
             </p>
-            <ul>
-              <li>I contributed to AprilTag pose work used to relocalize the robot from the goal target.</li>
-              <li>The team used a 20-point distance sample to model shooter RPM as <code>1768.96491 + 7.3377 * distance</code>.</li>
-              <li>The software reduced loop time from roughly 60 ms to 15 ms by writing actuator power once per loop.</li>
-            </ul>
+            <p>
+              Two rows of custom wheels maintained continuous ball contact,
+              while a third row of smaller Gecko wheels accelerated transfer
+              into the internal mechanism. This addressed the slippage and
+              inconsistent acquisition of earlier rubber-band designs.
+            </p>
           </div>
         </article>
 
+        <!-- PHASE 08 -->
+
         <article class="iteration-card">
-          <video controls preload="metadata">
-            <source src="./assets/ftc/13-field-test-15s.mp4" type="video/mp4" />
-            Your browser does not support embedded video.
-          </video>
+          <div class="ftc-build-media">
+            <img
+              src="./assets/ftc/IMG_8094.jpg"
+              alt="Final rotating turret, weighted flywheel, and shooter packaging"
+              loading="lazy"
+            />
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 08 / Field Test</p>
-            <h2>Robot validation on field layout</h2>
+            <p class="eyebrow">Phase 08 / Turret and Shooter</p>
+            <h2>Independent aiming and flywheel optimization</h2>
             <p>
-              Field testing gave the final feedback loop for subsystem timing,
-              driver control, scoring reliability, and field interaction. It
-              tied together intake, transfer, shooter, sensing, and software
-              architecture under realistic constraints.
+              I designed a rotating turret that allowed target alignment
+              independently of chassis orientation, minimizing repositioning
+              between ball acquisition and scoring.
             </p>
-            <ul>
-              <li>Tested robot behavior in a field-like environment.</li>
-              <li>Connected subsystem iteration to match-ready operation.</li>
-            </ul>
+            <p>
+              Weighted flywheels increased rotational inertia to reduce
+              speed loss between launches. A 1:1 transmission ratio was
+              retained as the preferred balance between torque and
+              rotational speed.
+            </p>
           </div>
         </article>
 
+        <!-- PHASE 09 -->
+
         <article class="iteration-card">
-          <img
-            src="./ftc-field-validation.jpg"
-            alt="Integrated FTC competition robot undergoing field validation"
-          />
+          <div class="ftc-build-media">
+            <video controls playsinline preload="metadata">
+              <source
+                src="./assets/ftc/13-field-test-15s.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support embedded video.
+            </video>
+          </div>
           <div class="iteration-body">
-            <p class="eyebrow">Phase 09 / Integrated Field Validation</p>
-            <h2>From subsystem tests to a complete robot</h2>
+            <p class="eyebrow">Phase 09 / Field Testing</p>
+            <h2>System-level validation</h2>
             <p>
-              The final build brought the intake, active transfer, turret,
-              shooter, sensors, and control software together on the field.
-              This stage shifted testing from isolated mechanisms to the timing
-              and interaction of the full system during realistic operation.
+              Field testing evaluated the interaction between the intake,
+              active transfer, shooter, turret, sensing, and control software
+              under realistic competition constraints. Testing informed
+              refinements to subsystem timing, automated aiming, and
+              scoring consistency.
             </p>
-            <ul>
-              <li>Validated the packaged mechanisms together rather than as independent bench assemblies.</li>
-              <li>Observed ball handling and field interaction to identify the next mechanical and controls refinements.</li>
-            </ul>
           </div>
         </article>
+
+        <!-- PHASE 10 -->
+
+        <article class="iteration-card featured-iteration">
+          <div class="ftc-build-media ftc-media-stack">
+            <img
+              src="./ftc-field-validation.jpg"
+              alt="Final integrated FTC competition robot"
+              loading="lazy"
+            />
+            <video controls playsinline preload="metadata">
+              <source
+                src="./assets/ftc/IMG_8099.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support embedded video.
+            </video>
+          </div>
+          <div class="iteration-body">
+            <p class="eyebrow">Phase 10 / Final Competition Robot</p>
+            <h2>Integrated competition platform</h2>
+            <p>
+              The final robot combined the compact chassis, custom molded
+              silicone intake wheels, active transfer mechanism, rotating
+              turret, adjustable shooter hood, and refined control software.
+              I led the system-level mechanical design in Onshape, with
+              peer assistance on select refinements.
+            </p>
+
+            <div class="ftc-performance">
+              <div>
+                <strong>~3 s → ~1 s</strong>
+                <span>Time between consecutive shots</span>
+              </div>
+              <div>
+                <strong>~67%</strong>
+                <span>Reduction in time between shots</span>
+              </div>
+              <div>
+                <strong>~3×</strong>
+                <span>Consecutive shooting rate</span>
+              </div>
+            </div>
+
+            <p>
+              Final pre-competition testing demonstrated the combined
+              improvements in ball acquisition, transfer speed, shooting
+              consistency, and independent target alignment.
+            </p>
+          </div>
+        </article>
+
       </section>
-      </details>
     </main>
 
     <footer class="footer">
