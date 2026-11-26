@@ -4101,11 +4101,15 @@ h2,
 /* Project media */
 
 .visual-projects .classic-project-media {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: none;
   margin: 0;
   padding: 0;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .visual-projects .classic-project-media img,
@@ -4127,6 +4131,9 @@ h2,
 
 .visual-projects .classic-project-media figcaption {
   margin-top: 10px;
+  padding: 0;
+  border: none;
+  background: transparent;
   color: #666666;
   font-size: 0.78rem;
   line-height: 1.5;
@@ -4212,5 +4219,23 @@ h2,
     max-height: 420px;
   }
 }
+/* Tight-fitting project image borders */
 
+.visual-projects .classic-project-media {
+  align-items: center;
+}
 
+.visual-projects .classic-project-media img,
+.visual-projects .classic-project-media video {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.visual-projects .classic-project-media figcaption {
+  text-align: center;
+}
